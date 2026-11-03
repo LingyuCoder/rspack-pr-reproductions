@@ -1,0 +1,6 @@
+{
+  "change": "Remove only the duplicate await from a copy of the PR output",
+  "exitCode": 0,
+  "stdout": "value=42",
+  "stderr": ""
+}

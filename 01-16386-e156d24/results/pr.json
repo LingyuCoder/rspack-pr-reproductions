@@ -1,0 +1,42 @@
+[
+  {
+    "case": "pr-split",
+    "sourceSha": "e156d242f031897c4d1b35e696479d753ca68921",
+    "bindingFile": "rspack.darwin-arm64.node",
+    "awaitLines": [
+      "__webpack_exports__ = await __webpack_exports__;",
+      "__webpack_exports__ = await __webpack_exports__;"
+    ],
+    "awaitCount": 2,
+    "exitCode": 1,
+    "stdout": "",
+    "stderr": "file://<repro>/dist/pr-split/main.mjs:16\n    throw new Error(\"unexpected then\");\n          ^\n\nError: unexpected then\n    at Module.then (file://<repro>/dist/pr-split/main.mjs:16:11)\n\nNode.js v22.16.0",
+    "buildErrors": false
+  },
+  {
+    "case": "pr-inline",
+    "sourceSha": "e156d242f031897c4d1b35e696479d753ca68921",
+    "bindingFile": "rspack.darwin-arm64.node",
+    "awaitLines": [
+      "__webpack_exports__ = await __webpack_exports__;"
+    ],
+    "awaitCount": 1,
+    "exitCode": 0,
+    "stdout": "value=42",
+    "stderr": "",
+    "buildErrors": false
+  },
+  {
+    "case": "pr-split-no-tla",
+    "sourceSha": "e156d242f031897c4d1b35e696479d753ca68921",
+    "bindingFile": "rspack.darwin-arm64.node",
+    "awaitLines": [
+      "__webpack_exports__ = await __webpack_exports__;"
+    ],
+    "awaitCount": 1,
+    "exitCode": 0,
+    "stdout": "value=42",
+    "stderr": "",
+    "buildErrors": false
+  }
+]

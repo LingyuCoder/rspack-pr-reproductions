@@ -1,0 +1,41 @@
+[
+  {
+    "case": "base-split",
+    "sourceSha": "f8b4091e996943438b1e667d407d862bc08c2f8b",
+    "awaitLines": [
+      "__webpack_exports__ = await __webpack_exports__;"
+    ],
+    "awaitCount": 1,
+    "exitCode": 0,
+    "stdout": "value=42",
+    "stderr": "",
+    "buildErrors": false,
+    "bindingFile": "rspack.darwin-arm64.node"
+  },
+  {
+    "case": "base-inline",
+    "sourceSha": "f8b4091e996943438b1e667d407d862bc08c2f8b",
+    "awaitLines": [
+      "__webpack_exports__ = await __webpack_exports__;"
+    ],
+    "awaitCount": 1,
+    "exitCode": 0,
+    "stdout": "value=42",
+    "stderr": "",
+    "buildErrors": false,
+    "bindingFile": "rspack.darwin-arm64.node"
+  },
+  {
+    "case": "base-split-no-tla",
+    "sourceSha": "f8b4091e996943438b1e667d407d862bc08c2f8b",
+    "awaitLines": [
+      "__webpack_exports__ = await __webpack_exports__;"
+    ],
+    "awaitCount": 1,
+    "exitCode": 0,
+    "stdout": "value=42",
+    "stderr": "",
+    "buildErrors": false,
+    "bindingFile": "rspack.darwin-arm64.node"
+  }
+]

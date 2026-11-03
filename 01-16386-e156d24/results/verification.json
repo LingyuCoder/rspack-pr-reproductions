@@ -1,0 +1,37 @@
+{
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "results": [
+    {
+      "case": "base-split",
+      "awaitCount": 1,
+      "exitCode": 0,
+      "outcome": "value=42"
+    },
+    {
+      "case": "pr-split",
+      "awaitCount": 2,
+      "exitCode": 1,
+      "outcome": "Error: unexpected then"
+    },
+    {
+      "case": "pr-inline",
+      "awaitCount": 1,
+      "exitCode": 0,
+      "outcome": "value=42"
+    },
+    {
+      "case": "pr-split-no-tla",
+      "awaitCount": 1,
+      "exitCode": 0,
+      "outcome": "value=42"
+    },
+    {
+      "case": "pr-split-single-await",
+      "awaitCount": 1,
+      "exitCode": 0,
+      "outcome": "value=42"
+    }
+  ]
+}
