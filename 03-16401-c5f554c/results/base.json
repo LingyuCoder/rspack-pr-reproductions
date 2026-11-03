@@ -1,0 +1,53 @@
+[
+  {
+    "case": "base-multi",
+    "entry": "a",
+    "sourceSha": "f8b4091e996943438b1e667d407d862bc08c2f8b",
+    "version": "2.3.0",
+    "bindingSourceSha": "f8b4091e996943438b1e667d407d862bc08c2f8b",
+    "bindingFile": "rspack.wasm32-wasi.wasm",
+    "bindingSha256": "ada7d44183067c874e90c62fb8048914198caf540e3c74f69079df620b124c7d",
+    "buildErrors": false,
+    "emittedArray": [
+      0
+    ],
+    "bundleBytes": 993,
+    "exitCode": 0,
+    "stdout": "mapped=0",
+    "stderr": ""
+  },
+  {
+    "case": "base-multi",
+    "entry": "b",
+    "sourceSha": "f8b4091e996943438b1e667d407d862bc08c2f8b",
+    "version": "2.3.0",
+    "bindingSourceSha": "f8b4091e996943438b1e667d407d862bc08c2f8b",
+    "bindingFile": "rspack.wasm32-wasi.wasm",
+    "bindingSha256": "ada7d44183067c874e90c62fb8048914198caf540e3c74f69079df620b124c7d",
+    "buildErrors": false,
+    "emittedArray": [
+      11
+    ],
+    "bundleBytes": 973,
+    "exitCode": 0,
+    "stdout": "first=11",
+    "stderr": ""
+  },
+  {
+    "case": "base-b-only",
+    "entry": "b",
+    "sourceSha": "f8b4091e996943438b1e667d407d862bc08c2f8b",
+    "version": "2.3.0",
+    "bindingSourceSha": "f8b4091e996943438b1e667d407d862bc08c2f8b",
+    "bindingFile": "rspack.wasm32-wasi.wasm",
+    "bindingSha256": "ada7d44183067c874e90c62fb8048914198caf540e3c74f69079df620b124c7d",
+    "buildErrors": false,
+    "emittedArray": [
+      11
+    ],
+    "bundleBytes": 973,
+    "exitCode": 0,
+    "stdout": "first=11",
+    "stderr": ""
+  }
+]

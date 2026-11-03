@@ -1,0 +1,100 @@
+{
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "results": [
+    {
+      "case": "base-multi",
+      "entry": "a",
+      "emittedArray": [
+        0
+      ],
+      "bundleBytes": 993,
+      "stdout": "mapped=0"
+    },
+    {
+      "case": "base-multi",
+      "entry": "b",
+      "emittedArray": [
+        11
+      ],
+      "bundleBytes": 973,
+      "stdout": "first=11"
+    },
+    {
+      "case": "base-b-only",
+      "entry": "b",
+      "emittedArray": [
+        11
+      ],
+      "bundleBytes": 973,
+      "stdout": "first=11"
+    },
+    {
+      "case": "pr-multi",
+      "entry": "a",
+      "emittedArray": [
+        11,
+        22,
+        33,
+        44,
+        55
+      ],
+      "bundleBytes": 1006,
+      "stdout": "mapped=22,44,66,88,110"
+    },
+    {
+      "case": "pr-multi",
+      "entry": "b",
+      "emittedArray": [
+        11,
+        22,
+        33,
+        44,
+        55
+      ],
+      "bundleBytes": 985,
+      "stdout": "first=11"
+    },
+    {
+      "case": "pr-b-only",
+      "entry": "b",
+      "emittedArray": [
+        11
+      ],
+      "bundleBytes": 973,
+      "stdout": "first=11"
+    },
+    {
+      "case": "webpack-multi",
+      "entry": "a",
+      "emittedArray": [
+        11,
+        22,
+        33,
+        44,
+        55
+      ],
+      "bundleBytes": 1418,
+      "stdout": "mapped=22,44,66,88,110"
+    },
+    {
+      "case": "webpack-multi",
+      "entry": "b",
+      "emittedArray": [
+        11
+      ],
+      "bundleBytes": 1382,
+      "stdout": "first=11"
+    },
+    {
+      "case": "webpack-b-only",
+      "entry": "b",
+      "emittedArray": [
+        11
+      ],
+      "bundleBytes": 1382,
+      "stdout": "first=11"
+    }
+  ]
+}

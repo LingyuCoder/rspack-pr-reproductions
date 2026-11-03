@@ -1,0 +1,57 @@
+[
+  {
+    "case": "webpack-multi",
+    "entry": "a",
+    "sourceSha": null,
+    "version": "5.112.2",
+    "bindingSourceSha": null,
+    "bindingFile": null,
+    "bindingSha256": null,
+    "buildErrors": false,
+    "emittedArray": [
+      11,
+      22,
+      33,
+      44,
+      55
+    ],
+    "bundleBytes": 1418,
+    "exitCode": 0,
+    "stdout": "mapped=22,44,66,88,110",
+    "stderr": ""
+  },
+  {
+    "case": "webpack-multi",
+    "entry": "b",
+    "sourceSha": null,
+    "version": "5.112.2",
+    "bindingSourceSha": null,
+    "bindingFile": null,
+    "bindingSha256": null,
+    "buildErrors": false,
+    "emittedArray": [
+      11
+    ],
+    "bundleBytes": 1382,
+    "exitCode": 0,
+    "stdout": "first=11",
+    "stderr": ""
+  },
+  {
+    "case": "webpack-b-only",
+    "entry": "b",
+    "sourceSha": null,
+    "version": "5.112.2",
+    "bindingSourceSha": null,
+    "bindingFile": null,
+    "bindingSha256": null,
+    "buildErrors": false,
+    "emittedArray": [
+      11
+    ],
+    "bundleBytes": 1382,
+    "exitCode": 0,
+    "stdout": "first=11",
+    "stderr": ""
+  }
+]
