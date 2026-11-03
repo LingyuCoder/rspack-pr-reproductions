@@ -1,0 +1,24 @@
+[
+  {
+    "case": "pr-mangle",
+    "sourceSha": "124b1c221352ac221d8233d69e6c6685056b5185",
+    "version": "2.3.0",
+    "mangleExports": true,
+    "bindingFile": "rspack.darwin-arm64.node",
+    "buildErrors": false,
+    "exitCode": 0,
+    "stdout": "value=undefined\nowns=true",
+    "stderr": ""
+  },
+  {
+    "case": "pr-no-mangle",
+    "sourceSha": "124b1c221352ac221d8233d69e6c6685056b5185",
+    "version": "2.3.0",
+    "mangleExports": false,
+    "bindingFile": "rspack.darwin-arm64.node",
+    "buildErrors": false,
+    "exitCode": 0,
+    "stdout": "value=42\nowns=true",
+    "stderr": ""
+  }
+]

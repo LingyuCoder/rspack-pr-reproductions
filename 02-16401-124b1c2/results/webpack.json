@@ -1,0 +1,24 @@
+[
+  {
+    "case": "webpack-mangle",
+    "sourceSha": null,
+    "version": "5.112.2",
+    "mangleExports": true,
+    "bindingFile": null,
+    "buildErrors": false,
+    "exitCode": 0,
+    "stdout": "value=42\nowns=true",
+    "stderr": ""
+  },
+  {
+    "case": "webpack-no-mangle",
+    "sourceSha": null,
+    "version": "5.112.2",
+    "mangleExports": false,
+    "bindingFile": null,
+    "buildErrors": false,
+    "exitCode": 0,
+    "stdout": "value=42\nowns=true",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "results": [
+    {
+      "case": "native",
+      "exitCode": 0,
+      "stdout": "value=42\nowns=true"
+    },
+    {
+      "case": "base-mangle",
+      "exitCode": 0,
+      "stdout": "value=42\nowns=false"
+    },
+    {
+      "case": "base-no-mangle",
+      "exitCode": 0,
+      "stdout": "value=42\nowns=true"
+    },
+    {
+      "case": "pr-mangle",
+      "exitCode": 0,
+      "stdout": "value=undefined\nowns=true"
+    },
+    {
+      "case": "pr-no-mangle",
+      "exitCode": 0,
+      "stdout": "value=42\nowns=true"
+    },
+    {
+      "case": "webpack-mangle",
+      "exitCode": 0,
+      "stdout": "value=42\nowns=true"
+    },
+    {
+      "case": "webpack-no-mangle",
+      "exitCode": 0,
+      "stdout": "value=42\nowns=true"
+    }
+  ]
+}
