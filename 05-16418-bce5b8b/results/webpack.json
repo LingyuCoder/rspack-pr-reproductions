@@ -1,0 +1,40 @@
+[
+  {
+    "case": "webpack-mangle",
+    "sourceSha": null,
+    "version": "5.112.2",
+    "mangleExports": true,
+    "bindingSourceSha": null,
+    "bindingFile": null,
+    "bindingSha256": null,
+    "buildErrors": false,
+    "buildWarnings": false,
+    "emittedJson": {
+      "run": null,
+      "kept": 42
+    },
+    "bundleBytes": 1508,
+    "exitCode": 0,
+    "stdout": "value=42",
+    "stderr": ""
+  },
+  {
+    "case": "webpack-no-mangle",
+    "sourceSha": null,
+    "version": "5.112.2",
+    "mangleExports": false,
+    "bindingSourceSha": null,
+    "bindingFile": null,
+    "bindingSha256": null,
+    "buildErrors": false,
+    "buildWarnings": false,
+    "emittedJson": {
+      "run": null,
+      "kept": 42
+    },
+    "bundleBytes": 1508,
+    "exitCode": 0,
+    "stdout": "value=42",
+    "stderr": ""
+  }
+]

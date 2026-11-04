@@ -1,0 +1,64 @@
+{
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "results": [
+    {
+      "case": "native",
+      "exitCode": 0,
+      "stdout": "value=42"
+    },
+    {
+      "case": "base-mangle",
+      "exitCode": 0,
+      "stdout": "value=42",
+      "emittedJson": {
+        "run": null,
+        "kept": 42
+      }
+    },
+    {
+      "case": "base-no-mangle",
+      "exitCode": 0,
+      "stdout": "value=42",
+      "emittedJson": {
+        "run": null,
+        "kept": 42
+      }
+    },
+    {
+      "case": "pr-mangle",
+      "exitCode": 0,
+      "stdout": "value=undefined",
+      "emittedJson": {
+        "e": null
+      }
+    },
+    {
+      "case": "pr-no-mangle",
+      "exitCode": 0,
+      "stdout": "value=undefined",
+      "emittedJson": {
+        "run": null
+      }
+    },
+    {
+      "case": "webpack-mangle",
+      "exitCode": 0,
+      "stdout": "value=42",
+      "emittedJson": {
+        "run": null,
+        "kept": 42
+      }
+    },
+    {
+      "case": "webpack-no-mangle",
+      "exitCode": 0,
+      "stdout": "value=42",
+      "emittedJson": {
+        "run": null,
+        "kept": 42
+      }
+    }
+  ]
+}

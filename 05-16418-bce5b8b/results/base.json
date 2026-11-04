@@ -1,0 +1,40 @@
+[
+  {
+    "case": "base-mangle",
+    "sourceSha": "8b100de82f2f487bc97a7c934b856672e5eef7d0",
+    "version": "2.3.1",
+    "mangleExports": true,
+    "bindingSourceSha": "69956a35e77a98a1b522ae44f36496a6645da74f",
+    "bindingFile": "rspack.darwin-arm64.node",
+    "bindingSha256": "355910103591ef6379b342930f1c0761b3b0c48ec808b794d88afc9933164276",
+    "buildErrors": false,
+    "buildWarnings": false,
+    "emittedJson": {
+      "run": null,
+      "kept": 42
+    },
+    "bundleBytes": 1048,
+    "exitCode": 0,
+    "stdout": "value=42",
+    "stderr": ""
+  },
+  {
+    "case": "base-no-mangle",
+    "sourceSha": "8b100de82f2f487bc97a7c934b856672e5eef7d0",
+    "version": "2.3.1",
+    "mangleExports": false,
+    "bindingSourceSha": "69956a35e77a98a1b522ae44f36496a6645da74f",
+    "bindingFile": "rspack.darwin-arm64.node",
+    "bindingSha256": "355910103591ef6379b342930f1c0761b3b0c48ec808b794d88afc9933164276",
+    "buildErrors": false,
+    "buildWarnings": false,
+    "emittedJson": {
+      "run": null,
+      "kept": 42
+    },
+    "bundleBytes": 1048,
+    "exitCode": 0,
+    "stdout": "value=42",
+    "stderr": ""
+  }
+]
