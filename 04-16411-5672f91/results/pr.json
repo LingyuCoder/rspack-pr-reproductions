@@ -1,0 +1,110 @@
+{
+  "label": "pr",
+  "capturedAt": "2026-11-04T06:21:51.128Z",
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "bindingFile": "rspack.darwin-arm64.node",
+  "bindingSha256": "7e7be6fe225d78003b2f04bc7148504b498ddb4391e9ef542795bd84f407c08c",
+  "bindingSourceSha": "c343ba8053ec8c387daf7502bb59bbdf7299b974",
+  "version": null,
+  "results": [
+    {
+      "case": "initial-missing-nested",
+      "directories": [
+        "src",
+        "src/child"
+      ],
+      "childExistedAtWatch": false,
+      "filesystemMutationAfterWatch": null,
+      "events": [
+        {
+          "kind": "change",
+          "path": "src/child",
+          "mtime": null
+        }
+      ],
+      "batches": [
+        {
+          "changedFiles": [
+            "src"
+          ],
+          "removedFiles": []
+        }
+      ],
+      "changedFiles": [
+        "src"
+      ],
+      "removedFiles": []
+    },
+    {
+      "case": "initial-missing-standalone",
+      "directories": [
+        "src/child"
+      ],
+      "childExistedAtWatch": false,
+      "filesystemMutationAfterWatch": null,
+      "events": [
+        {
+          "kind": "remove",
+          "path": "src/child"
+        }
+      ],
+      "batches": [
+        {
+          "changedFiles": [],
+          "removedFiles": [
+            "src/child"
+          ]
+        }
+      ],
+      "changedFiles": [],
+      "removedFiles": [
+        "src/child"
+      ]
+    },
+    {
+      "case": "live-removal-nested",
+      "directories": [
+        "src",
+        "src/child"
+      ],
+      "childExistedAtWatch": true,
+      "filesystemMutationAfterWatch": "rmdir(src/child)",
+      "events": [
+        {
+          "kind": "change",
+          "path": "src/child",
+          "mtime": null
+        },
+        {
+          "kind": "change",
+          "path": "src/child",
+          "mtime": null
+        },
+        {
+          "kind": "change",
+          "path": "src/child",
+          "mtime": null
+        },
+        {
+          "kind": "change",
+          "path": "src/child",
+          "mtime": null
+        }
+      ],
+      "batches": [
+        {
+          "changedFiles": [
+            "src"
+          ],
+          "removedFiles": []
+        }
+      ],
+      "changedFiles": [
+        "src"
+      ],
+      "removedFiles": []
+    }
+  ]
+}

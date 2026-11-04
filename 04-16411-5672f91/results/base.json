@@ -1,0 +1,139 @@
+{
+  "label": "base",
+  "capturedAt": "2026-11-04T06:21:52.228Z",
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "bindingFile": "rspack.darwin-arm64.node",
+  "bindingSha256": "ca501843cc82019a4ab0d22642706f7bab04ba2ddc6ea66ba5839e2542366a0f",
+  "bindingSourceSha": "e6ca07e224a6c9424c8f16b90ed26857c2aac47f",
+  "version": null,
+  "results": [
+    {
+      "case": "initial-missing-nested",
+      "directories": [
+        "src",
+        "src/child"
+      ],
+      "childExistedAtWatch": false,
+      "filesystemMutationAfterWatch": null,
+      "events": [
+        {
+          "kind": "remove",
+          "path": "src/child"
+        },
+        {
+          "kind": "change",
+          "path": "src",
+          "mtime": "unspecified"
+        }
+      ],
+      "batches": [
+        {
+          "changedFiles": [
+            "src"
+          ],
+          "removedFiles": [
+            "src/child"
+          ]
+        }
+      ],
+      "changedFiles": [
+        "src"
+      ],
+      "removedFiles": [
+        "src/child"
+      ]
+    },
+    {
+      "case": "initial-missing-standalone",
+      "directories": [
+        "src/child"
+      ],
+      "childExistedAtWatch": false,
+      "filesystemMutationAfterWatch": null,
+      "events": [
+        {
+          "kind": "remove",
+          "path": "src/child"
+        }
+      ],
+      "batches": [
+        {
+          "changedFiles": [],
+          "removedFiles": [
+            "src/child"
+          ]
+        }
+      ],
+      "changedFiles": [],
+      "removedFiles": [
+        "src/child"
+      ]
+    },
+    {
+      "case": "live-removal-nested",
+      "directories": [
+        "src",
+        "src/child"
+      ],
+      "childExistedAtWatch": true,
+      "filesystemMutationAfterWatch": "rmdir(src/child)",
+      "events": [
+        {
+          "kind": "change",
+          "path": "src/child",
+          "mtime": "unspecified"
+        },
+        {
+          "kind": "change",
+          "path": "src",
+          "mtime": "unspecified"
+        },
+        {
+          "kind": "remove",
+          "path": "src/child"
+        },
+        {
+          "kind": "change",
+          "path": "src",
+          "mtime": "unspecified"
+        },
+        {
+          "kind": "remove",
+          "path": "src/child"
+        },
+        {
+          "kind": "change",
+          "path": "src",
+          "mtime": "unspecified"
+        },
+        {
+          "kind": "remove",
+          "path": "src/child"
+        },
+        {
+          "kind": "change",
+          "path": "src",
+          "mtime": "unspecified"
+        }
+      ],
+      "batches": [
+        {
+          "changedFiles": [
+            "src"
+          ],
+          "removedFiles": [
+            "src/child"
+          ]
+        }
+      ],
+      "changedFiles": [
+        "src"
+      ],
+      "removedFiles": [
+        "src/child"
+      ]
+    }
+  ]
+}

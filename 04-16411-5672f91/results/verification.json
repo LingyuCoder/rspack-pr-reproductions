@@ -1,0 +1,63 @@
+{
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "mode": "saved-capture-verification",
+  "confirmed": true,
+  "results": [
+    {
+      "implementation": "base",
+      "case": "initial-missing-nested",
+      "changedFiles": "src",
+      "removedFiles": "src/child"
+    },
+    {
+      "implementation": "base",
+      "case": "initial-missing-standalone",
+      "changedFiles": "",
+      "removedFiles": "src/child"
+    },
+    {
+      "implementation": "base",
+      "case": "live-removal-nested",
+      "changedFiles": "src",
+      "removedFiles": "src/child"
+    },
+    {
+      "implementation": "pr",
+      "case": "initial-missing-nested",
+      "changedFiles": "src",
+      "removedFiles": ""
+    },
+    {
+      "implementation": "pr",
+      "case": "initial-missing-standalone",
+      "changedFiles": "",
+      "removedFiles": "src/child"
+    },
+    {
+      "implementation": "pr",
+      "case": "live-removal-nested",
+      "changedFiles": "src",
+      "removedFiles": ""
+    },
+    {
+      "implementation": "watchpack",
+      "case": "initial-missing-nested",
+      "changedFiles": "",
+      "removedFiles": "src/child"
+    },
+    {
+      "implementation": "watchpack",
+      "case": "initial-missing-standalone",
+      "changedFiles": "",
+      "removedFiles": "src/child"
+    },
+    {
+      "implementation": "watchpack",
+      "case": "live-removal-nested",
+      "changedFiles": "src",
+      "removedFiles": ""
+    }
+  ]
+}
