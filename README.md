@@ -21,6 +21,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [14-16470-ca5d312](./14-16470-ca5d312/) | [#16470](https://github.com/web-infra-dev/rspack/pull/16470) | [`ca5d312`](https://github.com/web-infra-dev/rspack/commit/ca5d3122ab09991916b7bb2d8a7f52523b4ce331) | External no-sources maps keep discarded original source content alive through the emitted JavaScript |
 | [15-16543-183d42d](./15-16543-183d42d/) | [#16543](https://github.com/web-infra-dev/rspack/pull/16543) | [`183d42d`](https://github.com/web-infra-dev/rspack/commit/183d42dba1777e74379b80032f51a981be402bf5) | Clearing a PnP resolver ignores a newly installed, closer manifest |
 | [16-16554-94c8e84](./16-16554-94c8e84/) | [#16554](https://github.com/web-infra-dev/rspack/pull/16554) | [`94c8e84`](https://github.com/web-infra-dev/rspack/commit/94c8e84581dafc28d13c6691f6216df07bd2439c) | Aliases declared in a later tsconfig lose the earlier baseUrl |
+| [17-16420-3f81372](./17-16420-3f81372/) | [#16420](https://github.com/web-infra-dev/rspack/pull/16420) | [`3f81372`](https://github.com/web-infra-dev/rspack/commit/3f8137291e09b185d6dc146428f76f2cffb36e7e) | Lazy SRI allows a modified async script to execute on an independent entry path |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -36,6 +37,7 @@ node 08-16545-3e1d7cd/verify.mjs
 node 09-16545-3e1d7cd/verify.mjs
 node 15-16543-183d42d/verify.mjs
 node 16-16554-94c8e84/verify.mjs
+node 17-16420-3f81372/verify.mjs
 ```
 
 For #16470, see each case's README for the toolchain or binding prerequisites:
