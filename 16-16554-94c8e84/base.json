@@ -1,0 +1,5 @@
+{
+  "typescriptVersion": "5.9.3",
+  "typescript": "src/value.ts",
+  "rspack": "src/value.ts"
+}
