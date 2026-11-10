@@ -1,0 +1,6 @@
+{
+  "before": "v1/index.js",
+  "afterClear": "v1/index.js",
+  "fresh": "v2/index.js",
+  "yarnAfterInstall": "v2/index.js"
+}
