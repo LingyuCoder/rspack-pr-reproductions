@@ -14,6 +14,9 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [07-16198-c8d8b6e](./07-16198-c8d8b6e/) | [#16198](https://github.com/web-infra-dev/rspack/pull/16198) | [`c8d8b6e`](https://github.com/web-infra-dev/rspack/commit/c8d8b6e3eeceefb740a8941da1f6f51cb21b0296) | Returning a dynamic import from an accept callback prevents chunk-version catch-up |
 | [08-16545-3e1d7cd](./08-16545-3e1d7cd/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`3e1d7cd`](https://github.com/web-infra-dev/rspack/commit/3e1d7cd0cde668971934a5ac7e9fb20fc49bf8ad) | Keeping a quoted re-export emits invalid ESM |
 | [09-16545-3e1d7cd](./09-16545-3e1d7cd/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`3e1d7cd`](https://github.com/web-infra-dev/rspack/commit/3e1d7cd0cde668971934a5ac7e9fb20fc49bf8ad) | A retained external moves ahead of its prerequisite split chunk |
+| [10-16470-5d545e9](./10-16470-5d545e9/) | [#16470](https://github.com/web-infra-dev/rspack/pull/16470) | [`5d545e9`](https://github.com/web-infra-dev/rspack/commit/5d545e903e7fc801de95d48129ddcb102d50c93e) | Materializing external map JSON after a content-hash edit takes longer |
+| [11-16470-5d545e9](./11-16470-5d545e9/) | [#16470](https://github.com/web-infra-dev/rspack/pull/16470) | [`5d545e9`](https://github.com/web-infra-dev/rspack/commit/5d545e903e7fc801de95d48129ddcb102d50c93e) | DevTool retains the minimizer's intermediate source map and unminified input after emit |
+| [12-16470-5d545e9](./12-16470-5d545e9/) | [#16470](https://github.com/web-infra-dev/rspack/pull/16470) | [`5d545e9`](https://github.com/web-infra-dev/rspack/commit/5d545e903e7fc801de95d48129ddcb102d50c93e) | Computing several SRI algorithms for one large asset no longer runs them in parallel |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -27,6 +30,14 @@ node 06-16198-c8d8b6e/verify.mjs
 node 07-16198-c8d8b6e/verify.mjs
 node 08-16545-3e1d7cd/verify.mjs
 node 09-16545-3e1d7cd/verify.mjs
+```
+
+For #16470, see each case's README for the toolchain or binding prerequisites:
+
+```sh
+node 10-16470-5d545e9/verify.mjs
+node 11-16470-5d545e9/verify.mjs
+node 12-16470-5d545e9/verify.mjs
 ```
 
 Each case includes its input or live harness and captured comparison results.

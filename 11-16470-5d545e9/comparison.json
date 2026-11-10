@@ -1,0 +1,14 @@
+[
+  {
+    "alive": false,
+    "inputBytes": 8400042,
+    "minifiedBytes": 20,
+    "probeIsOnlyInputOwner": true
+  },
+  {
+    "alive": true,
+    "inputBytes": 8400042,
+    "minifiedBytes": 20,
+    "probeIsOnlyInputOwner": false
+  }
+]

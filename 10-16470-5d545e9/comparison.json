@@ -1,0 +1,119 @@
+{
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "rustc": "rustc 1.97.0-nightly (e8e4541ff 2026-04-15)",
+  "shas": {
+    "main": "d30a883abf352d9bad4ee3809cce42eb049589b7",
+    "base": "580d3467e8e63a2860e7b6db4f657dbb8137a927",
+    "head": "5d545e903e7fc801de95d48129ddcb102d50c93e"
+  },
+  "results": [
+    {
+      "revision": "main",
+      "bytes": 471977,
+      "bare_ns": 205352,
+      "edited_ns": 340750,
+      "edited_samples": [
+        324155,
+        326616,
+        327175,
+        328396,
+        332894,
+        340750,
+        368242,
+        371992,
+        392143,
+        409058,
+        515514
+      ]
+    },
+    {
+      "revision": "head",
+      "bytes": 471977,
+      "bare_ns": 234893,
+      "edited_ns": 440282,
+      "edited_samples": [
+        430744,
+        433087,
+        433692,
+        434355,
+        437202,
+        440282,
+        443867,
+        449525,
+        452966,
+        453264,
+        495565
+      ]
+    },
+    {
+      "revision": "base",
+      "bytes": 471977,
+      "bare_ns": 218310,
+      "edited_ns": 352411,
+      "edited_samples": [
+        319720,
+        321141,
+        333192,
+        336755,
+        345410,
+        352411,
+        355317,
+        384079,
+        402965,
+        409681,
+        423945
+      ]
+    },
+    {
+      "revision": "head",
+      "bytes": 471977,
+      "bare_ns": 199530,
+      "edited_ns": 421163,
+      "edited_samples": [
+        413205,
+        417237,
+        417523,
+        418490,
+        418493,
+        421163,
+        422015,
+        422490,
+        434995,
+        439354,
+        441985
+      ]
+    },
+    {
+      "revision": "main",
+      "bytes": 471977,
+      "bare_ns": 186239,
+      "edited_ns": 321815,
+      "edited_samples": [
+        316240,
+        317570,
+        320580,
+        320785,
+        320960,
+        321815,
+        323824,
+        325575,
+        329815,
+        335089,
+        341671
+      ]
+    }
+  ],
+  "actualProductionConfigTrigger": {
+    "config": "mode:production, devtool:source-map, optimization.minimize:false, optimization.realContentHash:true, output.filename:[name].[contenthash:8].js",
+    "beforeRCH": {
+      "stage": 2499,
+      "map": "main.7d987d2e.js.map",
+      "file": "main.7d987d2e.js"
+    },
+    "afterRCH": {
+      "stage": 2501,
+      "map": "main.cbd264c1.js.map",
+      "file": "main.cbd264c1.js"
+    }
+  }
+}

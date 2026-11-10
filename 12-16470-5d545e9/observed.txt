@@ -1,0 +1,6 @@
+main d30a883abf352d9bad4ee3809cce42eb049589b7
+pr d38c87743dd6c64006734acde2f3f4b409f97af5
+sha384 main {"warmSamples":12,"sriMedianMs":14.87,"totalMedianMs":44.71,"emittedBytes":9382095}
+sha384 pr {"warmSamples":12,"sriMedianMs":14.51,"totalMedianMs":95.19,"emittedBytes":9382095}
+sha256+sha384+sha512 main {"warmSamples":12,"sriMedianMs":22.3,"totalMedianMs":44.82,"emittedBytes":9382095}
+sha256+sha384+sha512 pr {"warmSamples":12,"sriMedianMs":46.74,"totalMedianMs":73.03,"emittedBytes":9382095}
