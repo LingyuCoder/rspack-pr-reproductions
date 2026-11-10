@@ -1,0 +1,4 @@
+base: idle: handled: render failed -> idle: accepted
+pr: apply: render failed -> apply: check() is only allowed in idle status
+webpack: idle: handled: render failed -> idle: accepted
+webpack-release: apply: render failed -> apply: check() is only allowed in idle status

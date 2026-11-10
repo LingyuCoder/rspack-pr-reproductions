@@ -1,0 +1,2 @@
+base: update succeeds; lazy chunk exports 2; status idle
+pr: update and import both time out waiting for HMR; status apply
