@@ -1,0 +1,18 @@
+[
+  {
+    "refs": 0,
+    "original": 9643,
+    "allocation": 472264,
+    "state": "dropped",
+    "js": "68a154f72907c564d2a5a7e9e2b0c77d34351072b3431109084c5e1f05f79583",
+    "map": "f490f62e8a589ec0014106c390f57263856e3aed5d9d49b05f6963aea6cc1d10"
+  },
+  {
+    "refs": 1,
+    "original": 9643,
+    "allocation": 472264,
+    "state": "alive",
+    "js": "68a154f72907c564d2a5a7e9e2b0c77d34351072b3431109084c5e1f05f79583",
+    "map": "f490f62e8a589ec0014106c390f57263856e3aed5d9d49b05f6963aea6cc1d10"
+  }
+]

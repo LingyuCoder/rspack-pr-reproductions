@@ -18,6 +18,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [11-16470-5d545e9](./11-16470-5d545e9/) | [#16470](https://github.com/web-infra-dev/rspack/pull/16470) | [`5d545e9`](https://github.com/web-infra-dev/rspack/commit/5d545e903e7fc801de95d48129ddcb102d50c93e) | DevTool retains the minimizer's intermediate source map and unminified input after emit |
 | [12-16470-5d545e9](./12-16470-5d545e9/) | [#16470](https://github.com/web-infra-dev/rspack/pull/16470) | [`5d545e9`](https://github.com/web-infra-dev/rspack/commit/5d545e903e7fc801de95d48129ddcb102d50c93e) | Computing several SRI algorithms for one large asset no longer runs them in parallel |
 | [13-16470-c6ec478](./13-16470-c6ec478/) | [#16470](https://github.com/web-infra-dev/rspack/pull/16470) | [`c6ec478`](https://github.com/web-infra-dev/rspack/commit/c6ec478e89492da3a7fba80a36481b4c1f724096) | An inline source map keeps the plugin-provided input map alive after emit |
+| [14-16470-ca5d312](./14-16470-ca5d312/) | [#16470](https://github.com/web-infra-dev/rspack/pull/16470) | [`ca5d312`](https://github.com/web-infra-dev/rspack/commit/ca5d3122ab09991916b7bb2d8a7f52523b4ce331) | External no-sources maps keep discarded original source content alive through the emitted JavaScript |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -40,6 +41,7 @@ node 10-16470-5d545e9/verify.mjs
 node 11-16470-5d545e9/verify.mjs
 node 12-16470-5d545e9/verify.mjs
 node 13-16470-c6ec478/verify.mjs
+node 14-16470-ca5d312/verify.mjs
 ```
 
 Each case includes its input or live harness and captured comparison results.
