@@ -1,0 +1,6 @@
+{
+  "before": "dep/index.js",
+  "afterClear": "dep/index.js",
+  "fresh": "app/dep/index.js",
+  "yarn": "app/dep/index.js"
+}
