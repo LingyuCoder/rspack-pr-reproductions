@@ -1,0 +1,24 @@
+{
+  "browser": "149.0.7827.54",
+  "initial": [
+    "shared.js",
+    "page.js"
+  ],
+  "expected": "sha256-Xw+RVXGcmxpfvEbqRAb1qQ3ey6yybH+rWclFKctJbYI=",
+  "tests": [
+    {
+      "tamper": false,
+      "integrity": "sha256-Xw+RVXGcmxpfvEbqRAb1qQ3ey6yybH+rWclFKctJbYI=",
+      "value": 42,
+      "error": null,
+      "tamperedCodeRan": false
+    },
+    {
+      "tamper": true,
+      "integrity": "sha256-Xw+RVXGcmxpfvEbqRAb1qQ3ey6yybH+rWclFKctJbYI=",
+      "value": null,
+      "error": "ChunkLoadError",
+      "tamperedCodeRan": false
+    }
+  ]
+}
