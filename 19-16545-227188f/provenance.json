@@ -1,0 +1,12 @@
+{
+  "node": "v24.22.0",
+  "platform": "macOS arm64",
+  "baseSha": "25976e8d5ae073375ebbf43ab0acca7eb0f82b5f",
+  "prSha": "227188f25f6f9af948d2a703fb93344c77dd077d",
+  "baseBindingSha256": "046aeb4d40853c9eb81b99d338b13cb87e128f3d334d287b18af176dfae308b7",
+  "prBindingSha256": "1a1856c9b9bc5b46d1b0f72b29f819871dd1810f5ce87c9c30190a2c71b6cd58",
+  "baseArtifactId": 13786526858,
+  "baseRun": 42860907089,
+  "prBuild": "pnpm run build:binding:dev",
+  "jsBuild": "pnpm run build:js on PR head; JS wrapper unchanged relative to base"
+}

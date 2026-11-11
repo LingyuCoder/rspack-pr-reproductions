@@ -1,0 +1,3 @@
+source: 42
+base: 42
+pr: SyntaxError: String literal module export names must be followed by a 'from' clause

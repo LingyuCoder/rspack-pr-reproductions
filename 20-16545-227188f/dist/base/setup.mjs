@@ -1,0 +1,3 @@
+globalThis.ready = true;
+
+export {};

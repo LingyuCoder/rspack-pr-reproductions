@@ -23,6 +23,8 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [16-16554-94c8e84](./16-16554-94c8e84/) | [#16554](https://github.com/web-infra-dev/rspack/pull/16554) | [`94c8e84`](https://github.com/web-infra-dev/rspack/commit/94c8e84581dafc28d13c6691f6216df07bd2439c) | Aliases declared in a later tsconfig lose the earlier baseUrl |
 | [17-16420-3f81372](./17-16420-3f81372/) | [#16420](https://github.com/web-infra-dev/rspack/pull/16420) | [`3f81372`](https://github.com/web-infra-dev/rspack/commit/3f8137291e09b185d6dc146428f76f2cffb36e7e) | Lazy SRI allows a modified async script to execute on an independent entry path |
 | [18-16420-45bc0a8](./18-16420-45bc0a8/) | [#16420](https://github.com/web-infra-dev/rspack/pull/16420) | [`45bc0a8`](https://github.com/web-infra-dev/rspack/commit/45bc0a88b3537b18084386877c79484aa746e12c) | An initially loaded member of an async cycle loses SRI coverage |
+| [19-16545-227188f](./19-16545-227188f/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`227188f`](https://github.com/web-infra-dev/rspack/commit/227188f25f6f9af948d2a703fb93344c77dd077d) | Unicode local re-export still produces invalid ESM |
+| [20-16545-227188f](./20-16545-227188f/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`227188f`](https://github.com/web-infra-dev/rspack/commit/227188f25f6f9af948d2a703fb93344c77dd077d) | An intermediate module bypasses the prior-chunk ordering guard |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -50,6 +52,8 @@ node 11-16470-5d545e9/verify.mjs
 node 12-16470-5d545e9/verify.mjs
 node 13-16470-c6ec478/verify.mjs
 node 14-16470-ca5d312/verify.mjs
+node 19-16545-227188f/verify.mjs
+node 20-16545-227188f/verify.mjs
 ```
 
 Each case includes its input or live harness and captured comparison results.
