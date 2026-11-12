@@ -1,0 +1,18 @@
+{
+  "verifiedDate": "2026-11-12",
+  "node": "v22.16.0",
+  "platform": "macOS arm64",
+  "rspackVersion": "2.3.2",
+  "baseSha": "cde8fcc8fb83fafb4bbe42ba6d0967beb15ec98d",
+  "prSha": "3437f2ff751cd2b4cd7c6314b766745acfc11258",
+  "comparison": "Exact merge base versus reviewed PR head",
+  "baseBindingSha256": "66246f533075810155190f2fa0ee35b9419df28c25bfcef85c1be49d12782424",
+  "prBindingSha256": "7da6ba3d8af68f7f26639a1d45cd00dd6c77bfdb6595c056dc24554cbafc60d7",
+  "nativeBuild": "pnpm run build:binding:dev at each clean source revision",
+  "rustc": "rustc 1.97.0-nightly (e8e4541ff 2026-04-15)",
+  "rustToolchain": "nightly-2026-04-16",
+  "jsWrapperSourceSha": "227188f25f6f9af948d2a703fb93344c77dd077d",
+  "jsWrapperIndexSha256": "0339ffb4a1e21c3a01589ba0bf19109a91d375168201ea2aec795201bd04cab0",
+  "jsBuild": "Reused pnpm run build:js artifact; packages and binding-wrapper sources unchanged between its source revision, merge base, and PR head",
+  "verification": "Live builds of the fixture with both native bindings, followed by node verify.mjs executing source and generated bundles in separate processes"
+}

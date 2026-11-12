@@ -1,0 +1,2 @@
+if (!globalThis.ready) throw Error('setup must run first');
+export const value = 42;
