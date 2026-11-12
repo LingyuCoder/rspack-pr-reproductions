@@ -1,0 +1,18 @@
+{
+  "pr": "https://github.com/web-infra-dev/rspack/pull/16580",
+  "reviewed_head": "30ca66e8cccd15b7c145f0da6994ace75010448b",
+  "merge_base": "66478d2824205bc8c90768dd68feb7f85fb03c2c",
+  "head_native": {
+    "source_commit": "681c4f3ae72d4180bd9eef620ac073df3dc020b6",
+    "note": "Native sources and JS sources are identical at reviewed head; the follow-up changes only benchmark and cache statistic snapshots. Local development build via pnpm run build:binding:dev and build:js.",
+    "sha256": "42143f7b5519037978d4002aad9d38b3fbfea1188dc25d738352c465f8ac9073"
+  },
+  "base_native": {
+    "source_commit": "66478d2824205bc8c90768dd68feb7f85fb03c2c",
+    "ci_run": "https://github.com/web-infra-dev/rspack/actions/runs/42986454692",
+    "artifact": "https://github.com/web-infra-dev/rspack/actions/runs/42986454692/artifacts/13842431198",
+    "sha256": "a51e58f2f81f4e263bd5697fb1c138fa445da123979f1cc198e1071db8e4ef2c"
+  },
+  "js": "Built from each revision with packages/rspack rs lib; unchanged prebundled dependencies are shared.",
+  "validation": "Node v24.22.0 on macOS arm64. Count-based comparison only; no walltime ratio claimed because native build profiles differ."
+}

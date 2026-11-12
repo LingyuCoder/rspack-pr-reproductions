@@ -25,6 +25,8 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [18-16420-45bc0a8](./18-16420-45bc0a8/) | [#16420](https://github.com/web-infra-dev/rspack/pull/16420) | [`45bc0a8`](https://github.com/web-infra-dev/rspack/commit/45bc0a88b3537b18084386877c79484aa746e12c) | An initially loaded member of an async cycle loses SRI coverage |
 | [19-16545-227188f](./19-16545-227188f/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`227188f`](https://github.com/web-infra-dev/rspack/commit/227188f25f6f9af948d2a703fb93344c77dd077d) | Unicode local re-export still produces invalid ESM |
 | [20-16545-227188f](./20-16545-227188f/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`227188f`](https://github.com/web-infra-dev/rspack/commit/227188f25f6f9af948d2a703fb93344c77dd077d) | An intermediate module bypasses the prior-chunk ordering guard |
+| [21-16580-30ca66e](./21-16580-30ca66e/) | [#16580](https://github.com/web-infra-dev/rspack/pull/16580) | [`30ca66e`](https://github.com/web-infra-dev/rspack/commit/30ca66e8cccd15b7c145f0da6994ace75010448b) | A failed build removes the executor while another async loader can still import |
+| [22-16580-30ca66e](./22-16580-30ca66e/) | [#16580](https://github.com/web-infra-dev/rspack/pull/16580) | [`30ca66e`](https://github.com/web-infra-dev/rspack/commit/30ca66e8cccd15b7c145f0da6994ace75010448b) | A local CSS watch edit rebuilds all producers of an unchanged shared stylesheet |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -60,3 +62,10 @@ Each case includes its input or live harness and captured comparison results.
 Bundler cases also include their build configuration and actual generated bundles.
 The watcher case checks saved event captures; its README explains how to rerun
 the live comparison with matching native bindings and Watchpack.
+
+For #16580, the verifiers execute live builds with matching wrappers/bindings; see the case READMEs for `BASE_CORE`, `BASE_BINDING`, `HEAD_CORE`, and `HEAD_BINDING`:
+
+```sh
+node 21-16580-30ca66e/verify.mjs
+node 22-16580-30ca66e/verify.mjs
+```

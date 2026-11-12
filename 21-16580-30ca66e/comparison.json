@@ -1,0 +1,35 @@
+{
+  "node": "v24.22.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "captures": [
+    {
+      "label": "base",
+      "status": 0,
+      "signal": null,
+      "stdout": "async loader started\nrun callback: expected hook error\nasync loader importing\nimport completed: payload\nclosed without crashing\n",
+      "stderr": ""
+    },
+    {
+      "label": "head",
+      "status": null,
+      "signal": "SIGABRT",
+      "stdout": "async loader started\nrun callback: expected hook error\nasync loader importing\n",
+      "stderr": "DebugInfo:\n\n\u001b[1m\u001b[33mcontext\u001b[0m: <case>\n\nPanic occurred at runtime. Please file an issue on GitHub with the panic info and backtrace below: https://github.com/web-infra-dev/rspack/issues\n\nthread 'tokio-13' (20515885) panicked at crates/rspack_binding_api/src/compilation/mod.rs:794:12:\nshould have module executor\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+    },
+    {
+      "label": "head-no-failure",
+      "status": 0,
+      "signal": null,
+      "stdout": "async loader started\nasync loader importing\nimport completed: payload\nrun callback: success\nclosed without crashing\n",
+      "stderr": ""
+    },
+    {
+      "label": "head-import-before-failure",
+      "status": 0,
+      "signal": null,
+      "stdout": "async loader started\nasync loader importing\nimport completed: payload\nrun callback: expected hook error\nclosed without crashing\n",
+      "stderr": ""
+    }
+  ]
+}
