@@ -27,6 +27,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [20-16545-227188f](./20-16545-227188f/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`227188f`](https://github.com/web-infra-dev/rspack/commit/227188f25f6f9af948d2a703fb93344c77dd077d) | An intermediate module bypasses the prior-chunk ordering guard |
 | [21-16580-30ca66e](./21-16580-30ca66e/) | [#16580](https://github.com/web-infra-dev/rspack/pull/16580) | [`30ca66e`](https://github.com/web-infra-dev/rspack/commit/30ca66e8cccd15b7c145f0da6994ace75010448b) | A failed build removes the executor while another async loader can still import |
 | [22-16580-30ca66e](./22-16580-30ca66e/) | [#16580](https://github.com/web-infra-dev/rspack/pull/16580) | [`30ca66e`](https://github.com/web-infra-dev/rspack/commit/30ca66e8cccd15b7c145f0da6994ace75010448b) | A local CSS watch edit rebuilds all producers of an unchanged shared stylesheet |
+| [23-16545-3437f2f](./23-16545-3437f2f/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`3437f2f`](https://github.com/web-infra-dev/rspack/commit/3437f2ff751cd2b4cd7c6314b766745acfc11258) | Retaining an external import breaks a default re-export's live binding |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -44,6 +45,7 @@ node 15-16543-183d42d/verify.mjs
 node 16-16554-94c8e84/verify.mjs
 node 17-16420-3f81372/verify.mjs
 node 18-16420-45bc0a8/verify.mjs
+node 23-16545-3437f2f/verify.mjs
 ```
 
 For #16470, see each case's README for the toolchain or binding prerequisites:
