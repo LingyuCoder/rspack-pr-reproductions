@@ -1,0 +1,204 @@
+{
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "source": {
+    "lazy-require": {
+      "status": 0,
+      "stdout": "{\"value\":42,\"helperLoaded\":true}",
+      "stderr": ""
+    },
+    "require-resolve": {
+      "status": 0,
+      "stdout": "{\"value\":42,\"helperLoaded\":true}",
+      "stderr": ""
+    },
+    "eager-dynamic": {
+      "status": 0,
+      "stdout": "{\"value\":42,\"helperLoaded\":true}",
+      "stderr": ""
+    }
+  },
+  "comparisons": [
+    {
+      "fixture": "lazy-require",
+      "runtime": "default",
+      "size": "readable",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/dist/pr/lazy-require/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/dist/pr/lazy-require/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    },
+    {
+      "fixture": "require-resolve",
+      "runtime": "default",
+      "size": "readable",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/dist/pr/require-resolve/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/dist/pr/require-resolve/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    },
+    {
+      "fixture": "eager-dynamic",
+      "runtime": "default",
+      "size": "readable",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/dist/pr/eager-dynamic/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/dist/pr/eager-dynamic/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    },
+    {
+      "fixture": "lazy-require",
+      "runtime": "default",
+      "size": "min",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/.work/default/min/pr/lazy-require/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/.work/default/min/pr/lazy-require/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    },
+    {
+      "fixture": "require-resolve",
+      "runtime": "default",
+      "size": "min",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/.work/default/min/pr/require-resolve/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/.work/default/min/pr/require-resolve/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    },
+    {
+      "fixture": "eager-dynamic",
+      "runtime": "default",
+      "size": "min",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/.work/default/min/pr/eager-dynamic/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/.work/default/min/pr/eager-dynamic/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    },
+    {
+      "fixture": "lazy-require",
+      "runtime": "rspack",
+      "size": "readable",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/.work/rspack/readable/pr/lazy-require/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/.work/rspack/readable/pr/lazy-require/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    },
+    {
+      "fixture": "require-resolve",
+      "runtime": "rspack",
+      "size": "readable",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/.work/rspack/readable/pr/require-resolve/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/.work/rspack/readable/pr/require-resolve/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    },
+    {
+      "fixture": "eager-dynamic",
+      "runtime": "rspack",
+      "size": "readable",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/.work/rspack/readable/pr/eager-dynamic/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/.work/rspack/readable/pr/eager-dynamic/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    },
+    {
+      "fixture": "lazy-require",
+      "runtime": "rspack",
+      "size": "min",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/.work/rspack/min/pr/lazy-require/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/.work/rspack/min/pr/lazy-require/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    },
+    {
+      "fixture": "require-resolve",
+      "runtime": "rspack",
+      "size": "min",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/.work/rspack/min/pr/require-resolve/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/.work/rspack/min/pr/require-resolve/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    },
+    {
+      "fixture": "eager-dynamic",
+      "runtime": "rspack",
+      "size": "min",
+      "base": {
+        "status": 0,
+        "stdout": "{\"value\":42,\"helperLoaded\":true}",
+        "stderr": ""
+      },
+      "pr": {
+        "status": 1,
+        "stdout": "",
+        "stderr": "file://<CASE_DIR>/.work/rspack/min/pr/eager-dynamic/ext.mjs:1\nif(!globalThis.ready) throw Error('setup must run first'); export const value = 42;\n                            ^\n\nError: setup must run first\n    at file://<CASE_DIR>/.work/rspack/min/pr/eager-dynamic/ext.mjs:1:29\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:268:26)\n    at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:264:20)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0"
+      }
+    }
+  ]
+}

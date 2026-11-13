@@ -31,6 +31,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [24-16545-3437f2f](./24-16545-3437f2f/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`3437f2f`](https://github.com/web-infra-dev/rspack/commit/3437f2ff751cd2b4cd7c6314b766745acfc11258) | An extracted earlier array entry is missing from the ordering guard |
 | [25-16569-3aecb83](./25-16569-3aecb83/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`3aecb83`](https://github.com/web-infra-dev/rspack/commit/3aecb83c090e6876ea5849c1e3f9027adabc92a7) | Overlapping directory contexts lose a linked file's startup change when its real target is ignored |
 | [26-16545-3c7a8bd](./26-16545-3c7a8bd/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`3c7a8bd`](https://github.com/web-infra-dev/rspack/commit/3c7a8bdd7a19d6aa0469583e1e9041d870e5c2bb) | New regression hooks import filesystem paths as URLs and fail on Windows drive paths |
+| [27-16545-05d51be](./27-16545-05d51be/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`05d51be`](https://github.com/web-infra-dev/rspack/commit/05d51be7b4b6f3732687e4602257796ade2e614a) | Lazy and resolve-only dependencies bypass the prior-chunk evaluation-order guard |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -87,4 +88,12 @@ revision; see its README for setup:
 
 ```sh
 RSPACK_REPO=/absolute/path/to/rspack node 26-16545-3c7a8bd/verify.mjs
+```
+
+Case 27 runs native controls and 12 live base/head bundler comparisons. Set
+`BASE_CORE`, `BASE_BINDING`, `HEAD_CORE`, and `HEAD_BINDING` as documented in its
+README, then run:
+
+```sh
+node 27-16545-05d51be/verify.mjs
 ```

@@ -1,0 +1,20 @@
+{
+  "verifiedDate": "2026-11-13",
+  "prSha": "05d51be7b4b6f3732687e4602257796ade2e614a",
+  "baseSha": "cde8fcc8fb83fafb4bbe42ba6d0967beb15ec98d",
+  "headNativeSourceSha": "3c7a8bdd7a19d6aa0469583e1e9041d870e5c2bb",
+  "headNativeSourceReuse": "git diff 3c7a8bd 05d51be -- crates Cargo.toml Cargo.lock rust-toolchain.toml is empty",
+  "baseBindingSha256": "66246f533075810155190f2fa0ee35b9419df28c25bfcef85c1be49d12782424",
+  "headBindingSha256": "cfe9f04a2bdc1ca4aa080b701063c9db14aee8af07936683e043d52bcba474fe",
+  "jsWrapperSourceSha": "05d51be7b4b6f3732687e4602257796ade2e614a",
+  "jsWrapperIndexSha256": "0339ffb4a1e21c3a01589ba0bf19109a91d375168201ea2aec795201bd04cab0",
+  "jsWrapperCompatibility": "packages/rspack and crates/node_binding sources are unchanged from the exact merge base through head",
+  "jsBuild": "pnpm run build:js at 05d51be",
+  "nativeBuild": "pnpm run build:binding:dev at each native source revision",
+  "node": "v22.16.0",
+  "pnpm": "11.28.11",
+  "platform": "macOS arm64",
+  "rspackVersion": "2.3.2",
+  "rustToolchain": "nightly-2026-04-16",
+  "verification": "3 native-source controls and 12 live base/head build-and-execute comparisons across runtime modes and minification settings"
+}
