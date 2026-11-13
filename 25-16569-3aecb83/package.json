@@ -1,0 +1,8 @@
+{
+  "name": "rspack-pr-16569-overlapping-symlink-contexts",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": { "verify": "node verify.mjs", "verify:live": "node verify.mjs --live" },
+  "dependencies": { "watchpack": "2.6.3" }
+}

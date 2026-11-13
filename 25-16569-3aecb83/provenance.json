@@ -1,0 +1,27 @@
+{
+  "pr": "https://github.com/web-infra-dev/rspack/pull/16569",
+  "reviewedHead": "3aecb83c090e6876ea5849c1e3f9027adabc92a7",
+  "mergeBase": "ab8c28f6748b19e2b0fee38d5c80ae44483a99ea",
+  "prBinding": {
+    "sourceSha": "201130f1d0578fe01826edc0714060af21cc1bf0",
+    "parents": ["b14db6b2e07d0f76ea538c2d1c9ca192e77f4bc2", "3aecb83c090e6876ea5849c1e3f9027adabc92a7"],
+    "run": 43357616600,
+    "job": 131663841389,
+    "artifact": 14007765143,
+    "artifactName": "bindings-aarch64-apple-darwin"
+  },
+  "baseBinding": {
+    "sourceSha": "ab8c28f6748b19e2b0fee38d5c80ae44483a99ea",
+    "run": 43031862865,
+    "job": 130560941414,
+    "artifact": 13860444820,
+    "artifactName": "bindings-aarch64-apple-darwin"
+  },
+  "watchpack": "2.6.3",
+  "sourceComparison": {
+    "paths": ["crates/rspack_watcher", "crates/rspack_binding_api/src/native_watcher.rs", "crates/rspack_paths", "crates/rspack_util", "crates/rspack_napi"],
+    "reviewedHeadVersusCiMerge": "identical for all listed paths",
+    "mergeBaseVersusCiBaseParent": "identical for all listed paths",
+    "cargoLockDifferenceBetweenBaseRevisions": "only html-escape changes from 0.2.15 to 0.3.1; unrelated to the watcher"
+  }
+}

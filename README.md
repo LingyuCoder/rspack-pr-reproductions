@@ -29,6 +29,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [22-16580-30ca66e](./22-16580-30ca66e/) | [#16580](https://github.com/web-infra-dev/rspack/pull/16580) | [`30ca66e`](https://github.com/web-infra-dev/rspack/commit/30ca66e8cccd15b7c145f0da6994ace75010448b) | A local CSS watch edit rebuilds all producers of an unchanged shared stylesheet |
 | [23-16545-3437f2f](./23-16545-3437f2f/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`3437f2f`](https://github.com/web-infra-dev/rspack/commit/3437f2ff751cd2b4cd7c6314b766745acfc11258) | Retaining an external import breaks a default re-export's live binding |
 | [24-16545-3437f2f](./24-16545-3437f2f/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`3437f2f`](https://github.com/web-infra-dev/rspack/commit/3437f2ff751cd2b4cd7c6314b766745acfc11258) | An extracted earlier array entry is missing from the ordering guard |
+| [25-16569-3aecb83](./25-16569-3aecb83/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`3aecb83`](https://github.com/web-infra-dev/rspack/commit/3aecb83c090e6876ea5849c1e3f9027adabc92a7) | Overlapping directory contexts lose a linked file's startup change when its real target is ignored |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -48,6 +49,7 @@ node 17-16420-3f81372/verify.mjs
 node 18-16420-45bc0a8/verify.mjs
 node 23-16545-3437f2f/verify.mjs
 node 24-16545-3437f2f/verify.mjs
+node 25-16569-3aecb83/verify.mjs
 ```
 
 For #16470, see each case's README for the toolchain or binding prerequisites:
@@ -66,6 +68,11 @@ Each case includes its input or live harness and captured comparison results.
 Bundler cases also include their build configuration and actual generated bundles.
 The watcher case checks saved event captures; its README explains how to rerun
 the live comparison with matching native bindings and Watchpack.
+
+For #16569, `node 25-16569-3aecb83/verify.mjs --live` executes the watcher
+comparison when `BASE_BINDING` and `PR_BINDING` point to the documented
+artifacts and the case's npm dependencies are installed. Without `--live`,
+it verifies the saved captures.
 
 For #16580, the verifiers execute live builds with matching wrappers/bindings; see the case READMEs for `BASE_CORE`, `BASE_BINDING`, `HEAD_CORE`, and `HEAD_BINDING`:
 

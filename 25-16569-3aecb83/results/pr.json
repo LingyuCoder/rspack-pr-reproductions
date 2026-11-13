@@ -1,0 +1,113 @@
+{
+  "label": "pr",
+  "capturedAt": "2026-11-13T03:39:21.853Z",
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "bindingFile": "rspack.darwin-arm64.node",
+  "bindingSourceSha": "201130f1d0578fe01826edc0714060af21cc1bf0",
+  "bindingSha256": "71ceeb77c60e9e8a482de9dbc79ad62a5160f8a7aac563ada130ac1be597e1b1",
+  "results": [
+    {
+      "scenario": "overlap",
+      "directories": [
+        "app",
+        "app/link"
+      ],
+      "ignored": "target and descendants; app/link and its descendants are allowed",
+      "startTime": 1794541153651,
+      "changedMtime": 1794541153712.929,
+      "contentsAtBuildStart": "initial contents",
+      "contentsAtWatch": "edited during build",
+      "filesystemMutationAfterWatch": null,
+      "changedFiles": [],
+      "removedFiles": [],
+      "aliasTimestampRecorded": false,
+      "timestamps": [
+        "app",
+        "app/link"
+      ],
+      "errors": [],
+      "ignoredCalls": [
+        "app",
+        "app/link",
+        "target"
+      ],
+      "events": [],
+      "batches": []
+    },
+    {
+      "scenario": "nested-only",
+      "directories": [
+        "app"
+      ],
+      "ignored": "target and descendants; app/link and its descendants are allowed",
+      "startTime": 1794541157136,
+      "changedMtime": 1794541157187.762,
+      "contentsAtBuildStart": "initial contents",
+      "contentsAtWatch": "edited during build",
+      "filesystemMutationAfterWatch": null,
+      "changedFiles": [
+        "app"
+      ],
+      "removedFiles": [],
+      "aliasTimestampRecorded": true,
+      "timestamps": [
+        "app",
+        "app/link",
+        "app/link/value.js"
+      ],
+      "errors": [],
+      "ignoredCalls": [
+        "app",
+        "app/link",
+        "app/link/value.js",
+        "target/value.js"
+      ],
+      "events": [
+        {
+          "kind": "change",
+          "path": "app/link/value.js"
+        },
+        {
+          "kind": "change",
+          "path": "app/link/value.js"
+        }
+      ],
+      "batches": [
+        {
+          "changes": [
+            "app"
+          ],
+          "removals": []
+        }
+      ]
+    },
+    {
+      "scenario": "explicit-only",
+      "directories": [
+        "app/link"
+      ],
+      "ignored": "target and descendants; app/link and its descendants are allowed",
+      "startTime": 1794541160597,
+      "changedMtime": 1794541160648.9705,
+      "contentsAtBuildStart": "initial contents",
+      "contentsAtWatch": "edited during build",
+      "filesystemMutationAfterWatch": null,
+      "changedFiles": [],
+      "removedFiles": [],
+      "aliasTimestampRecorded": false,
+      "timestamps": [
+        "app/link"
+      ],
+      "errors": [],
+      "ignoredCalls": [
+        "app/link",
+        "target",
+        "target/value.js"
+      ],
+      "events": [],
+      "batches": []
+    }
+  ]
+}
