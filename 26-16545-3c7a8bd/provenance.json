@@ -1,0 +1,17 @@
+{
+  "verifiedDate": "2026-11-13",
+  "prSha": "3c7a8bdd7a19d6aa0469583e1e9041d870e5c2bb",
+  "baseSha": "cde8fcc8fb83fafb4bbe42ba6d0967beb15ec98d",
+  "node": "v22.16.0",
+  "pnpm": "11.28.11",
+  "platform": "macOS arm64",
+  "rspackVersion": "2.3.2",
+  "nativeBuild": "pnpm run build:binding:dev at the reviewed head",
+  "prBindingSha256": "cfe9f04a2bdc1ca4aa080b701063c9db14aee8af07936683e043d52bcba474fe",
+  "rustToolchain": "nightly-2026-04-16",
+  "jsWrapperSourceSha": "227188f25f6f9af948d2a703fb93344c77dd077d",
+  "jsWrapperIndexSha256": "0339ffb4a1e21c3a01589ba0bf19109a91d375168201ea2aec795201bd04cab0",
+  "jsBuild": "Reused pnpm run build:js artifacts; JavaScript package and binding-wrapper sources are unchanged through the reviewed head",
+  "comparison": "Original new test hook versus a pathToFileURL control, in the real EsmOutput and RuntimeModeEsmOutput suites",
+  "scope": "Actual macOS suite execution plus native Node drive-letter protocol rejection; no Windows CI run was executed"
+}

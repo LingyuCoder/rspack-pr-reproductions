@@ -30,6 +30,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [23-16545-3437f2f](./23-16545-3437f2f/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`3437f2f`](https://github.com/web-infra-dev/rspack/commit/3437f2ff751cd2b4cd7c6314b766745acfc11258) | Retaining an external import breaks a default re-export's live binding |
 | [24-16545-3437f2f](./24-16545-3437f2f/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`3437f2f`](https://github.com/web-infra-dev/rspack/commit/3437f2ff751cd2b4cd7c6314b766745acfc11258) | An extracted earlier array entry is missing from the ordering guard |
 | [25-16569-3aecb83](./25-16569-3aecb83/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`3aecb83`](https://github.com/web-infra-dev/rspack/commit/3aecb83c090e6876ea5849c1e3f9027adabc92a7) | Overlapping directory contexts lose a linked file's startup change when its real target is ignored |
+| [26-16545-3c7a8bd](./26-16545-3c7a8bd/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`3c7a8bd`](https://github.com/web-infra-dev/rspack/commit/3c7a8bdd7a19d6aa0469583e1e9041d870e5c2bb) | New regression hooks import filesystem paths as URLs and fail on Windows drive paths |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -79,4 +80,11 @@ For #16580, the verifiers execute live builds with matching wrappers/bindings; s
 ```sh
 node 21-16580-30ca66e/verify.mjs
 node 22-16580-30ca66e/verify.mjs
+```
+
+Case 26 runs the real integration suites in a built checkout of its reviewed
+revision; see its README for setup:
+
+```sh
+RSPACK_REPO=/absolute/path/to/rspack node 26-16545-3c7a8bd/verify.mjs
 ```

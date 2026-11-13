@@ -1,0 +1,18 @@
+{
+  "head": "3c7a8bdd7a19d6aa0469583e1e9041d870e5c2bb",
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "original": {
+    "status": 1,
+    "command": "pnpm --dir tests/rspack-test test EsmOutput.test.mjs -t \"repro-16545-url#CASE\" -u"
+  },
+  "file-url-control": {
+    "status": 0,
+    "command": "pnpm --dir tests/rspack-test test EsmOutput.test.mjs -t \"repro-16545-url#CASE\" -u"
+  },
+  "windowsPathProbe": {
+    "code": "ERR_UNSUPPORTED_ESM_URL_SCHEME",
+    "message": "Only URLs with a scheme in: file, data, and node are supported by the default ESM loader. Received protocol 'c:'"
+  }
+}

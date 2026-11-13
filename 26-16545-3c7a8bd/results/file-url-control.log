@@ -1,0 +1,11 @@
+ ✓ [base] RuntimeModeEsmOutput.test.mjs (270) 34ms
+  ✓ runtimeModeEsmOutput > runtimeModeEsmOutputCases-esmOutputCases/externals/repro-16545-url#CASE > should pass (20ms)
+ ✓ [base] EsmOutput.test.mjs (270) 31ms
+  ✓ esmOutput > esmOutputCases-esmOutputCases/externals/repro-16545-url#CASE > should pass (17ms)
+
+ Test Files 2 passed
+      Tests 2 passed | 538 skipped (540)
+   Duration 556ms (build 15ms, tests 541ms)
+
+
+$ rs test EsmOutput.test.mjs -t 'repro-16545-url#CASE' -u

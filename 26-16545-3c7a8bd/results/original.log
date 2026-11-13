@@ -1,0 +1,72 @@
+ ✗ [base] RuntimeModeEsmOutput.test.mjs (270) 34ms
+  ✓ runtimeModeEsmOutput > runtimeModeEsmOutputCases-esmOutputCases/externals/repro-16545-url#CASE > should pass (20ms)
+ ✗ [base] EsmOutput.test.mjs (270) 31ms
+  ✓ esmOutput > esmOutputCases-esmOutputCases/externals/repro-16545-url#CASE > should pass (18ms)
+
+   Snapshots 2 updated 
+ Test Files 2 failed
+      Tests 2 passed | 538 skipped (540)
+   Duration 534ms (build 16ms, tests 518ms)
+
+[ELIFECYCLE] Test failed. See above for more details.
+
+$ rs test EsmOutput.test.mjs -t 'repro-16545-url#CASE' -u
+unhandledRejection: Cannot find module '<RSPACK_REPO>/tests/rspack-test/js/esmOutput/externals/repro-16545-url' imported from <RSPACK_REPO>/tests/rspack-test/esmOutputCases/externals/repro-16545-url#CASE/test.config.mjs
+    at finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    at moduleResolve (node:internal/modules/esm/resolve:860:10)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at ModuleLoader.#cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:643:36)
+    at TracingChannel.tracePromise (node:diagnostics_channel:344:14)
+    at ModuleLoader.import (node:internal/modules/esm/loader:642:21) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file://<RSPACK_REPO>/tests/rspack-test/js/esmOutput/externals/repro-16545-url#CASE/main.mjs'
+}
+unhandledRejection: Cannot find module '<RSPACK_REPO>/tests/rspack-test/js/runtime-mode-esm-output/externals/repro-16545-url' imported from <RSPACK_REPO>/tests/rspack-test/esmOutputCases/externals/repro-16545-url#CASE/test.config.mjs
+    at finalizeResolution (node:internal/modules/esm/resolve:275:11)
+    at moduleResolve (node:internal/modules/esm/resolve:860:10)
+    at defaultResolve (node:internal/modules/esm/resolve:984:11)
+    at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+    at ModuleLoader.#cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+    at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+    at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+    at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:643:36)
+    at TracingChannel.tracePromise (node:diagnostics_channel:344:14)
+    at ModuleLoader.import (node:internal/modules/esm/loader:642:21) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file://<RSPACK_REPO>/tests/rspack-test/js/runtime-mode-esm-output/externals/repro-16545-url#CASE/main.mjs'
+}
+
+Summary of all failing tests:
+
+ FAIL  EsmOutput.test.mjs 
+unhandledRejection: Cannot find module '<RSPACK_REPO>/tests/rspack-test/js/esmOutput/externals/repro-16545-url' imported from <RSPACK_REPO>/tests/rspack-test/esmOutputCases/externals/repro-16545-url#CASE/test.config.mjs
+
+        at finalizeResolution (node:internal/modules/esm/resolve:275:11)
+        at moduleResolve (node:internal/modules/esm/resolve:860:10)
+        at defaultResolve (node:internal/modules/esm/resolve:984:11)
+        at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+        at ModuleLoader.#cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+        at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+        at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+        at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:643:36)
+        at TracingChannel.tracePromise (node:diagnostics_channel:344:14)
+        at ModuleLoader.import (node:internal/modules/esm/loader:642:21)
+
+ FAIL  RuntimeModeEsmOutput.test.mjs 
+unhandledRejection: Cannot find module '<RSPACK_REPO>/tests/rspack-test/js/runtime-mode-esm-output/externals/repro-16545-url' imported from <RSPACK_REPO>/tests/rspack-test/esmOutputCases/externals/repro-16545-url#CASE/test.config.mjs
+
+        at finalizeResolution (node:internal/modules/esm/resolve:275:11)
+        at moduleResolve (node:internal/modules/esm/resolve:860:10)
+        at defaultResolve (node:internal/modules/esm/resolve:984:11)
+        at ModuleLoader.defaultResolve (node:internal/modules/esm/loader:780:12)
+        at ModuleLoader.#cachedDefaultResolve (node:internal/modules/esm/loader:704:25)
+        at ModuleLoader.resolve (node:internal/modules/esm/loader:687:38)
+        at ModuleLoader.getModuleJobForImport (node:internal/modules/esm/loader:305:38)
+        at onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:643:36)
+        at TracingChannel.tracePromise (node:diagnostics_channel:344:14)
+        at ModuleLoader.import (node:internal/modules/esm/loader:642:21)
+
