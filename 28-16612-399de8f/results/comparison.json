@@ -1,0 +1,446 @@
+{
+  "base": {
+    "chunkhash": {
+      "cold": [
+        {
+          "step": 0,
+          "native": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "bundle": {
+            "edited": false,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "shared": "shared.ca9ad4ff.mjs",
+          "declarations": [
+            "import \"./A.mjs\";",
+            "export { b } from \"./B.mjs\";"
+          ]
+        },
+        {
+          "step": 1,
+          "native": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "bundle": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "shared": "shared.ca9ad4ff.mjs",
+          "declarations": [
+            "import \"./A.mjs\";",
+            "export { b } from \"./B.mjs\";"
+          ]
+        }
+      ],
+      "watch": [
+        {
+          "step": 0,
+          "native": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "bundle": {
+            "edited": false,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "shared": "shared.ad1df813.mjs",
+          "declarations": [
+            "import \"./A.mjs\";",
+            "export { b } from \"./B.mjs\";"
+          ]
+        },
+        {
+          "step": 1,
+          "native": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "bundle": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "shared": "shared.ad1df813.mjs",
+          "declarations": [
+            "import \"./A.mjs\";",
+            "export { b } from \"./B.mjs\";"
+          ]
+        }
+      ]
+    },
+    "incremental": {
+      "cold": [
+        {
+          "step": 0,
+          "native": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "bundle": {
+            "edited": false,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "shared": "shared.8eefb1bd.mjs",
+          "declarations": [
+            "import \"./A.mjs\";",
+            "export { b } from \"./B.mjs\";"
+          ]
+        },
+        {
+          "step": 1,
+          "native": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "bundle": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "shared": "shared.abb3bbfe.mjs",
+          "declarations": [
+            "import \"./A.mjs\";",
+            "export { b } from \"./B.mjs\";"
+          ]
+        }
+      ],
+      "watch": [
+        {
+          "step": 0,
+          "native": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "bundle": {
+            "edited": false,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "shared": "shared.8eefb1bd.mjs",
+          "declarations": [
+            "import \"./A.mjs\";",
+            "export { b } from \"./B.mjs\";"
+          ]
+        },
+        {
+          "step": 1,
+          "native": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "bundle": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "shared": "shared.8eefb1bd.mjs",
+          "declarations": [
+            "import \"./A.mjs\";",
+            "export { b } from \"./B.mjs\";"
+          ]
+        }
+      ]
+    }
+  },
+  "head": {
+    "chunkhash": {
+      "cold": [
+        {
+          "step": 0,
+          "native": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "bundle": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "shared": "shared.719a2edf.mjs",
+          "declarations": [
+            "export { b } from \"./B.mjs\";",
+            "import \"./A.mjs\";"
+          ]
+        },
+        {
+          "step": 1,
+          "native": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "bundle": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "shared": "shared.719a2edf.mjs",
+          "declarations": [
+            "import \"./A.mjs\";",
+            "export { b } from \"./B.mjs\";"
+          ]
+        }
+      ],
+      "watch": [
+        {
+          "step": 0,
+          "native": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "bundle": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "shared": "shared.dc9823e4.mjs",
+          "declarations": [
+            "export { b } from \"./B.mjs\";",
+            "import \"./A.mjs\";"
+          ]
+        },
+        {
+          "step": 1,
+          "native": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "bundle": {
+            "edited": true,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "shared": "shared.dc9823e4.mjs",
+          "declarations": [
+            "export { b } from \"./B.mjs\";",
+            "import \"./A.mjs\";"
+          ]
+        }
+      ]
+    },
+    "incremental": {
+      "cold": [
+        {
+          "step": 0,
+          "native": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "bundle": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "shared": "shared.2c4c35ac.mjs",
+          "declarations": [
+            "export { b } from \"./B.mjs\";",
+            "import \"./A.mjs\";"
+          ]
+        },
+        {
+          "step": 1,
+          "native": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "bundle": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "shared": "shared.abb3bbfe.mjs",
+          "declarations": [
+            "import \"./A.mjs\";",
+            "export { b } from \"./B.mjs\";"
+          ]
+        }
+      ],
+      "watch": [
+        {
+          "step": 0,
+          "native": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "bundle": {
+            "edited": false,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "shared": "shared.2c4c35ac.mjs",
+          "declarations": [
+            "export { b } from \"./B.mjs\";",
+            "import \"./A.mjs\";"
+          ]
+        },
+        {
+          "step": 1,
+          "native": {
+            "edited": true,
+            "order": [
+              "A",
+              "B"
+            ],
+            "b": true,
+            "child": 42
+          },
+          "bundle": {
+            "edited": true,
+            "order": [
+              "B",
+              "A"
+            ],
+            "b": false,
+            "child": 42
+          },
+          "shared": "shared.2c4c35ac.mjs",
+          "declarations": [
+            "export { b } from \"./B.mjs\";",
+            "import \"./A.mjs\";"
+          ]
+        }
+      ]
+    }
+  }
+}

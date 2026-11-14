@@ -32,6 +32,8 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [25-16569-3aecb83](./25-16569-3aecb83/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`3aecb83`](https://github.com/web-infra-dev/rspack/commit/3aecb83c090e6876ea5849c1e3f9027adabc92a7) | Overlapping directory contexts lose a linked file's startup change when its real target is ignored |
 | [26-16545-3c7a8bd](./26-16545-3c7a8bd/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`3c7a8bd`](https://github.com/web-infra-dev/rspack/commit/3c7a8bdd7a19d6aa0469583e1e9041d870e5c2bb) | New regression hooks import filesystem paths as URLs and fail on Windows drive paths |
 | [27-16545-05d51be](./27-16545-05d51be/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`05d51be`](https://github.com/web-infra-dev/rspack/commit/05d51be7b4b6f3732687e4602257796ade2e614a) | Lazy and resolve-only dependencies bypass the prior-chunk evaluation-order guard |
+| [28-16612-399de8f](./28-16612-399de8f/) | [#16612](https://github.com/web-infra-dev/rspack/pull/16612) | [`399de8f`](https://github.com/web-infra-dev/rspack/commit/399de8fdef30d8223288a6fa22d8db0a0c2bab1a) | A shared chunk can change request order without invalidating its hash |
+| [29-16612-399de8f](./29-16612-399de8f/) | [#16612](https://github.com/web-infra-dev/rspack/pull/16612) | [`399de8f`](https://github.com/web-infra-dev/rspack/commit/399de8fdef30d8223288a6fa22d8db0a0c2bab1a) | Splitting a named re-export runs an external before its initializer |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -96,4 +98,12 @@ README, then run:
 
 ```sh
 node 27-16545-05d51be/verify.mjs
+```
+
+Cases 28 and 29 run live native ESM, merge-base and reviewed-head controls for
+#16612. Set the wrapper and binding paths as described in either case README:
+
+```sh
+node 28-16612-399de8f/verify.mjs
+node 29-16612-399de8f/verify.mjs
 ```

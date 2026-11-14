@@ -1,0 +1,8 @@
+{
+  "pr": "web-infra-dev/rspack#16612",
+  "head": "399de8fdef30d8223288a6fa22d8db0a0c2bab1a",
+  "mergeBase": "685744e6130c46618a919e4498b2c649c328f297",
+  "node": "24.22.0",
+  "platform": "darwin-arm64",
+  "artifacts": "locally built matching native bindings and JS wrappers"
+}

@@ -1,0 +1,204 @@
+{
+  "base": {
+    "default": {
+      "native": {
+        "exit": 0,
+        "order": [
+          "x",
+          "z"
+        ],
+        "value": [
+          1,
+          1
+        ]
+      },
+      "bundle": {
+        "exit": 0,
+        "order": [
+          "x",
+          "z"
+        ],
+        "value": [
+          1,
+          1
+        ]
+      },
+      "snapshot": {
+        "main.mjs": [
+          "export { z } from \"./named.mjs\";",
+          "export { x } from \"./x.mjs\";"
+        ],
+        "named.mjs": [
+          "import \"./x.mjs\";",
+          "export { z } from \"./z.mjs\";"
+        ]
+      }
+    },
+    "rspack": {
+      "native": {
+        "exit": 0,
+        "order": [
+          "x",
+          "z"
+        ],
+        "value": [
+          1,
+          1
+        ]
+      },
+      "bundle": {
+        "exit": 0,
+        "order": [
+          "x",
+          "z"
+        ],
+        "value": [
+          1,
+          1
+        ]
+      },
+      "snapshot": {
+        "main.mjs": [
+          "export { z } from \"./named.mjs\";",
+          "export { x } from \"./x.mjs\";"
+        ],
+        "named.mjs": [
+          "import \"./x.mjs\";",
+          "export { z } from \"./z.mjs\";"
+        ]
+      }
+    }
+  },
+  "head": {
+    "default": {
+      "native": {
+        "exit": 0,
+        "order": [
+          "x",
+          "z"
+        ],
+        "value": [
+          1,
+          1
+        ]
+      },
+      "bundle": {
+        "exit": 1,
+        "order": [
+          "z"
+        ],
+        "error": "x is not initialized"
+      },
+      "snapshot": {
+        "main.mjs": [
+          "export { z } from \"./named.mjs\";",
+          "export { x } from \"./x.mjs\";"
+        ],
+        "named.mjs": [
+          "export { z } from \"./z.mjs\";",
+          "import \"./x.mjs\";"
+        ]
+      }
+    },
+    "rspack": {
+      "native": {
+        "exit": 0,
+        "order": [
+          "x",
+          "z"
+        ],
+        "value": [
+          1,
+          1
+        ]
+      },
+      "bundle": {
+        "exit": 1,
+        "order": [
+          "z"
+        ],
+        "error": "x is not initialized"
+      },
+      "snapshot": {
+        "main.mjs": [
+          "export { z } from \"./named.mjs\";",
+          "export { x } from \"./x.mjs\";"
+        ],
+        "named.mjs": [
+          "export { z } from \"./z.mjs\";",
+          "import \"./x.mjs\";"
+        ]
+      }
+    }
+  },
+  "original": {
+    "default": {
+      "native": {
+        "exit": 0,
+        "order": [
+          "x",
+          "z"
+        ],
+        "value": [
+          1,
+          1
+        ]
+      },
+      "bundle": {
+        "exit": 0,
+        "order": [
+          "x",
+          "z"
+        ],
+        "value": [
+          1,
+          1
+        ]
+      },
+      "snapshot": {
+        "main.mjs": [
+          "import { x } from \"./x.mjs\";",
+          "export { z } from \"./named.mjs\";"
+        ],
+        "named.mjs": [
+          "import { z } from \"./z.mjs\";",
+          "import \"./x.mjs\";"
+        ]
+      }
+    },
+    "rspack": {
+      "native": {
+        "exit": 0,
+        "order": [
+          "x",
+          "z"
+        ],
+        "value": [
+          1,
+          1
+        ]
+      },
+      "bundle": {
+        "exit": 0,
+        "order": [
+          "x",
+          "z"
+        ],
+        "value": [
+          1,
+          1
+        ]
+      },
+      "snapshot": {
+        "main.mjs": [
+          "import { x } from \"./x.mjs\";",
+          "export { z } from \"./named.mjs\";"
+        ],
+        "named.mjs": [
+          "import { z } from \"./z.mjs\";",
+          "import \"./x.mjs\";"
+        ]
+      }
+    }
+  }
+}
