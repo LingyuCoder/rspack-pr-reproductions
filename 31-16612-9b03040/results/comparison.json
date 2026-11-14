@@ -1,0 +1,362 @@
+{
+  "base": {
+    "default": {
+      "first-then-second": {
+        "native": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "bundle": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "requests": {
+          "first": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ],
+          "second": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ]
+        }
+      },
+      "second-then-first": {
+        "native": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "bundle": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "requests": {
+          "first": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ],
+          "second": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ]
+        }
+      }
+    },
+    "rspack": {
+      "first-then-second": {
+        "native": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "bundle": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "requests": {
+          "first": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ],
+          "second": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ]
+        }
+      },
+      "second-then-first": {
+        "native": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "bundle": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "requests": {
+          "first": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ],
+          "second": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ]
+        }
+      }
+    }
+  },
+  "head": {
+    "default": {
+      "first-then-second": {
+        "native": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "bundle": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 1,
+            "order": [],
+            "error": "setup must precede c"
+          }
+        },
+        "requests": {
+          "first": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ],
+          "second": [
+            "import \"./twin.mjs\";",
+            "import \"./z.mjs\";"
+          ]
+        }
+      },
+      "second-then-first": {
+        "native": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "bundle": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "requests": {
+          "first": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ],
+          "second": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ]
+        }
+      }
+    },
+    "rspack": {
+      "first-then-second": {
+        "native": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "bundle": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 1,
+            "order": [],
+            "error": "setup must precede c"
+          }
+        },
+        "requests": {
+          "first": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ],
+          "second": [
+            "import \"./twin.mjs\";",
+            "import \"./z.mjs\";"
+          ]
+        }
+      },
+      "second-then-first": {
+        "native": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "bundle": {
+          "first": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          },
+          "second": {
+            "exit": 0,
+            "order": [
+              "z",
+              "c"
+            ]
+          }
+        },
+        "requests": {
+          "first": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ],
+          "second": [
+            "import \"./z.mjs\";",
+            "import \"./twin.mjs\";"
+          ]
+        }
+      }
+    }
+  }
+}

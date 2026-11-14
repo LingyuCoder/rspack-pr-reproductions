@@ -1,0 +1,210 @@
+{
+  "base": {
+    "shared": {
+      "source": {
+        "loadA": {
+          "exit": 0,
+          "order": [
+            "setup",
+            "x"
+          ],
+          "tag": "setup-first",
+          "value": 1
+        },
+        "loadB": {
+          "exit": 0,
+          "order": [
+            "x",
+            "setup"
+          ],
+          "tag": "normal",
+          "value": 2
+        }
+      },
+      "bundle": {
+        "loadA": {
+          "exit": 0,
+          "order": [
+            "setup",
+            "x"
+          ],
+          "tag": "setup-first",
+          "value": 1
+        },
+        "loadB": {
+          "exit": 0,
+          "order": [
+            "setup",
+            "x"
+          ],
+          "tag": "normal",
+          "value": 2
+        }
+      },
+      "declarations": {
+        "shared.mjs": [
+          "import { z } from \"./setup.mjs\";",
+          "import { __webpack_require__ } from \"./runtime.mjs\";",
+          "import * as __rspack_external__setup_mjs_41c80ed1 from \"./setup.mjs\";",
+          "import * as __rspack_external__x_mjs_d3c229c4 from \"./x.mjs\";"
+        ]
+      }
+    },
+    "separate": {
+      "source": {
+        "loadA": {
+          "exit": 0,
+          "order": [
+            "setup",
+            "x"
+          ],
+          "tag": "setup-first",
+          "value": 1
+        },
+        "loadB": {
+          "exit": 0,
+          "order": [
+            "x",
+            "setup"
+          ],
+          "tag": "normal",
+          "value": 2
+        }
+      },
+      "bundle": {
+        "loadA": {
+          "exit": 0,
+          "order": [
+            "setup",
+            "x"
+          ],
+          "tag": "setup-first",
+          "value": 1
+        },
+        "loadB": {
+          "exit": 0,
+          "order": [
+            "x",
+            "setup"
+          ],
+          "tag": "normal",
+          "value": 2
+        }
+      },
+      "declarations": {
+        "shared.mjs": [
+          "import { __webpack_require__ } from \"./runtime.mjs\";",
+          "import * as __rspack_external__setup_mjs_41c80ed1 from \"./setup.mjs\";",
+          "import * as __rspack_external__x_mjs_d3c229c4 from \"./x.mjs\";"
+        ],
+        "normal.mjs": [
+          "import \"./x.mjs\";",
+          "export { z } from \"./setup.mjs\";"
+        ]
+      }
+    }
+  },
+  "head": {
+    "shared": {
+      "source": {
+        "loadA": {
+          "exit": 0,
+          "order": [
+            "setup",
+            "x"
+          ],
+          "tag": "setup-first",
+          "value": 1
+        },
+        "loadB": {
+          "exit": 0,
+          "order": [
+            "x",
+            "setup"
+          ],
+          "tag": "normal",
+          "value": 2
+        }
+      },
+      "bundle": {
+        "loadA": {
+          "exit": 1,
+          "order": [
+            "x"
+          ],
+          "error": "setup must run before x"
+        },
+        "loadB": {
+          "exit": 0,
+          "order": [
+            "x",
+            "setup"
+          ],
+          "tag": "normal",
+          "value": 2
+        }
+      },
+      "declarations": {
+        "shared.mjs": [
+          "import { __webpack_require__ } from \"./runtime.mjs\";",
+          "import * as __rspack_external__x_mjs_d3c229c4 from \"./x.mjs\";",
+          "import { z } from \"./setup.mjs\";",
+          "import * as __rspack_external__setup_mjs_41c80ed1 from \"./setup.mjs\";"
+        ]
+      }
+    },
+    "separate": {
+      "source": {
+        "loadA": {
+          "exit": 0,
+          "order": [
+            "setup",
+            "x"
+          ],
+          "tag": "setup-first",
+          "value": 1
+        },
+        "loadB": {
+          "exit": 0,
+          "order": [
+            "x",
+            "setup"
+          ],
+          "tag": "normal",
+          "value": 2
+        }
+      },
+      "bundle": {
+        "loadA": {
+          "exit": 0,
+          "order": [
+            "setup",
+            "x"
+          ],
+          "tag": "setup-first",
+          "value": 1
+        },
+        "loadB": {
+          "exit": 0,
+          "order": [
+            "x",
+            "setup"
+          ],
+          "tag": "normal",
+          "value": 2
+        }
+      },
+      "declarations": {
+        "shared.mjs": [
+          "import { __webpack_require__ } from \"./runtime.mjs\";",
+          "import * as __rspack_external__setup_mjs_41c80ed1 from \"./setup.mjs\";",
+          "import * as __rspack_external__x_mjs_d3c229c4 from \"./x.mjs\";"
+        ],
+        "normal.mjs": [
+          "import \"./x.mjs\";",
+          "export { z } from \"./setup.mjs\";"
+        ]
+      }
+    }
+  }
+}

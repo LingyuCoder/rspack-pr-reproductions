@@ -1,0 +1,10 @@
+{
+  "pr": "web-infra-dev/rspack#16612",
+  "head": "9b03040596345edd4b660a1efc89f9bf9ac4afe8",
+  "mergeBase": "7b514667945cd8e5ab5b0267f35fa00561402205",
+  "node": "24.22.0",
+  "platform": "darwin-arm64",
+  "baseNative": "https://github.com/web-infra-dev/rspack/actions/runs/43580704397/artifacts/14107928294",
+  "headNative": "locally built from the reviewed revision",
+  "jsWrapper": "packages/rspack is unchanged between the two revisions"
+}

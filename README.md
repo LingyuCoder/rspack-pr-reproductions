@@ -34,6 +34,9 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [27-16545-05d51be](./27-16545-05d51be/) | [#16545](https://github.com/web-infra-dev/rspack/pull/16545) | [`05d51be`](https://github.com/web-infra-dev/rspack/commit/05d51be7b4b6f3732687e4602257796ade2e614a) | Lazy and resolve-only dependencies bypass the prior-chunk evaluation-order guard |
 | [28-16612-399de8f](./28-16612-399de8f/) | [#16612](https://github.com/web-infra-dev/rspack/pull/16612) | [`399de8f`](https://github.com/web-infra-dev/rspack/commit/399de8fdef30d8223288a6fa22d8db0a0c2bab1a) | A shared chunk can change request order without invalidating its hash |
 | [29-16612-399de8f](./29-16612-399de8f/) | [#16612](https://github.com/web-infra-dev/rspack/pull/16612) | [`399de8f`](https://github.com/web-infra-dev/rspack/commit/399de8fdef30d8223288a6fa22d8db0a0c2bab1a) | Splitting a named re-export runs an external before its initializer |
+| [30-16612-9b03040](./30-16612-9b03040/) | [#16612](https://github.com/web-infra-dev/rspack/pull/16612) | [`9b03040`](https://github.com/web-infra-dev/rspack/commit/9b03040596345edd4b660a1efc89f9bf9ac4afe8) | A later static import hides the first synchronous request for an external |
+| [31-16612-9b03040](./31-16612-9b03040/) | [#16612](https://github.com/web-infra-dev/rspack/pull/16612) | [`9b03040`](https://github.com/web-infra-dev/rspack/commit/9b03040596345edd4b660a1efc89f9bf9ac4afe8) | Swapping two independent entries changes whether the second can initialize |
+| [32-16612-9b03040](./32-16612-9b03040/) | [#16612](https://github.com/web-infra-dev/rspack/pull/16612) | [`9b03040`](https://github.com/web-infra-dev/rspack/commit/9b03040596345edd4b660a1efc89f9bf9ac4afe8) | A shared named async chunk initializes externals in the wrong order for its CommonJS caller |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -106,4 +109,14 @@ Cases 28 and 29 run live native ESM, merge-base and reviewed-head controls for
 ```sh
 node 28-16612-399de8f/verify.mjs
 node 29-16612-399de8f/verify.mjs
+```
+
+For the later revision of #16612, set the wrapper and binding paths as
+described in the case READMEs. Each verifier rebuilds the case on both
+revisions and runs the consumer in fresh Node processes:
+
+```sh
+node 30-16612-9b03040/verify.mjs
+node 31-16612-9b03040/verify.mjs
+node 32-16612-9b03040/verify.mjs
 ```
