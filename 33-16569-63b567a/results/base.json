@@ -1,0 +1,83 @@
+{
+  "engine": "base",
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "sha256": "488effb903e904f3c1d5f4fc7f4f3ca69ed8efb436a96d4cafd6300d1a3412ad",
+  "observations": [
+    {
+      "scenario": "both",
+      "files": [
+        "app/link/value.js"
+      ],
+      "directories": [
+        "app"
+      ],
+      "startTime": 1794801947954,
+      "mtime": 1794801948006.3662,
+      "firstRead": "before",
+      "lastRead": "after",
+      "changes": [
+        "app",
+        "app/link/value.js"
+      ],
+      "removals": [],
+      "aliasIndexed": true,
+      "errors": []
+    },
+    {
+      "scenario": "context-only",
+      "files": [],
+      "directories": [
+        "app"
+      ],
+      "startTime": 1794801953323,
+      "mtime": 1794801953375.9658,
+      "firstRead": "before",
+      "lastRead": "after",
+      "changes": [
+        "app"
+      ],
+      "removals": [],
+      "aliasIndexed": true,
+      "errors": []
+    },
+    {
+      "scenario": "file-only",
+      "files": [
+        "app/link/value.js"
+      ],
+      "directories": [],
+      "startTime": 1794801958686,
+      "mtime": 1794801958739.9744,
+      "firstRead": "before",
+      "lastRead": "after",
+      "changes": [
+        "app/link/value.js"
+      ],
+      "removals": [],
+      "aliasIndexed": true,
+      "errors": []
+    },
+    {
+      "scenario": "without-ignore",
+      "files": [
+        "app/link/value.js"
+      ],
+      "directories": [
+        "app"
+      ],
+      "startTime": 1794801964061,
+      "mtime": 1794801964156.4985,
+      "firstRead": "before",
+      "lastRead": "after",
+      "changes": [
+        "app",
+        "app/link/value.js"
+      ],
+      "removals": [],
+      "aliasIndexed": true,
+      "errors": []
+    }
+  ]
+}

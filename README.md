@@ -37,6 +37,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [30-16612-9b03040](./30-16612-9b03040/) | [#16612](https://github.com/web-infra-dev/rspack/pull/16612) | [`9b03040`](https://github.com/web-infra-dev/rspack/commit/9b03040596345edd4b660a1efc89f9bf9ac4afe8) | A later static import hides the first synchronous request for an external |
 | [31-16612-9b03040](./31-16612-9b03040/) | [#16612](https://github.com/web-infra-dev/rspack/pull/16612) | [`9b03040`](https://github.com/web-infra-dev/rspack/commit/9b03040596345edd4b660a1efc89f9bf9ac4afe8) | Swapping two independent entries changes whether the second can initialize |
 | [32-16612-9b03040](./32-16612-9b03040/) | [#16612](https://github.com/web-infra-dev/rspack/pull/16612) | [`9b03040`](https://github.com/web-infra-dev/rspack/commit/9b03040596345edd4b660a1efc89f9bf9ac4afe8) | A shared named async chunk initializes externals in the wrong order for its CommonJS caller |
+| [33-16569-63b567a](./33-16569-63b567a/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`63b567a`](https://github.com/web-infra-dev/rspack/commit/63b567a5dbd2e3d78d9a1e3e919537d13e2bb8b9) | Registering a file under a directory link suppresses its parent context’s startup notification |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -57,6 +58,7 @@ node 18-16420-45bc0a8/verify.mjs
 node 23-16545-3437f2f/verify.mjs
 node 24-16545-3437f2f/verify.mjs
 node 25-16569-3aecb83/verify.mjs
+node 33-16569-63b567a/verify.mjs
 ```
 
 For #16470, see each case's README for the toolchain or binding prerequisites:
@@ -76,8 +78,8 @@ Bundler cases also include their build configuration and actual generated bundle
 The watcher case checks saved event captures; its README explains how to rerun
 the live comparison with matching native bindings and Watchpack.
 
-For #16569, `node 25-16569-3aecb83/verify.mjs --live` executes the watcher
-comparison when `BASE_BINDING` and `PR_BINDING` point to the documented
+For #16569, both case 25 and case 33 accept `node verify.mjs --live` from their
+own directories. This executes the watcher comparison when `BASE_BINDING` and `PR_BINDING` point to the documented
 artifacts and the case's npm dependencies are installed. Without `--live`,
 it verifies the saved captures.
 

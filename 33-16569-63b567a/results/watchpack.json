@@ -1,0 +1,80 @@
+{
+  "engine": "watchpack",
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "version": "2.6.3",
+  "observations": [
+    {
+      "scenario": "both",
+      "files": [
+        "app/link/value.js"
+      ],
+      "directories": [
+        "app"
+      ],
+      "startTime": 1794801991112,
+      "mtime": 1794801991164.5,
+      "firstRead": "before",
+      "lastRead": "after",
+      "changes": [
+        "app"
+      ],
+      "removals": [],
+      "aliasIndexed": true,
+      "errors": []
+    },
+    {
+      "scenario": "context-only",
+      "files": [],
+      "directories": [
+        "app"
+      ],
+      "startTime": 1794801996479,
+      "mtime": 1794801996530.6143,
+      "firstRead": "before",
+      "lastRead": "after",
+      "changes": [
+        "app"
+      ],
+      "removals": [],
+      "aliasIndexed": true,
+      "errors": []
+    },
+    {
+      "scenario": "file-only",
+      "files": [
+        "app/link/value.js"
+      ],
+      "directories": [],
+      "startTime": 1794802001840,
+      "mtime": 1794802001892.29,
+      "firstRead": "before",
+      "lastRead": "after",
+      "changes": [],
+      "removals": [],
+      "aliasIndexed": false,
+      "errors": []
+    },
+    {
+      "scenario": "without-ignore",
+      "files": [
+        "app/link/value.js"
+      ],
+      "directories": [
+        "app"
+      ],
+      "startTime": 1794802007202,
+      "mtime": 1794802007253.386,
+      "firstRead": "before",
+      "lastRead": "after",
+      "changes": [
+        "app",
+        "app/link/value.js"
+      ],
+      "removals": [],
+      "aliasIndexed": true,
+      "errors": []
+    }
+  ]
+}
