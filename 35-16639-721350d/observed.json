@@ -1,0 +1,43 @@
+{
+  "native": {
+    "direct": "ok",
+    "forwarded": "ok",
+    "presence": "true"
+  },
+  "base": {
+    "direct": {
+      "errors": [],
+      "warnings": [],
+      "stdout": "ok"
+    },
+    "forwarded": {
+      "errors": [],
+      "warnings": [],
+      "stdout": "ok"
+    },
+    "presence": {
+      "errors": [],
+      "warnings": [],
+      "stdout": "true"
+    }
+  },
+  "pr": {
+    "direct": {
+      "errors": [],
+      "warnings": [],
+      "stdout": "ok"
+    },
+    "forwarded": {
+      "errors": [
+        "ESModulesLinkingError: export 'ns'.'default' (imported as 'ns') was not found in './barrel.mjs' (possible exports: data)"
+      ],
+      "warnings": [],
+      "stdout": null
+    },
+    "presence": {
+      "errors": [],
+      "warnings": [],
+      "stdout": "false"
+    }
+  }
+}

@@ -39,6 +39,8 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [32-16612-9b03040](./32-16612-9b03040/) | [#16612](https://github.com/web-infra-dev/rspack/pull/16612) | [`9b03040`](https://github.com/web-infra-dev/rspack/commit/9b03040596345edd4b660a1efc89f9bf9ac4afe8) | A shared named async chunk initializes externals in the wrong order for its CommonJS caller |
 | [33-16569-63b567a](./33-16569-63b567a/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`63b567a`](https://github.com/web-infra-dev/rspack/commit/63b567a5dbd2e3d78d9a1e3e919537d13e2bb8b9) | Registering a file under a directory link suppresses its parent context’s startup notification |
 | [34-16569-63b567a](./34-16569-63b567a/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`63b567a`](https://github.com/web-infra-dev/rspack/commit/63b567a5dbd2e3d78d9a1e3e919537d13e2bb8b9) | An ignored physical file suppresses live edits for an allowed parent context on Linux |
+| [35-16639-721350d](./35-16639-721350d/) | [#16639](https://github.com/web-infra-dev/rspack/pull/16639) | [`721350d`](https://github.com/web-infra-dev/rspack/commit/721350d84f664a5c57b79799495f101d6195906f) | Forwarding a CommonJS namespace hides its default export and can fold a presence check to false |
+| [36-16639-721350d](./36-16639-721350d/) | [#16639](https://github.com/web-infra-dev/rspack/pull/16639) | [`721350d`](https://github.com/web-infra-dev/rspack/commit/721350d84f664a5c57b79799495f101d6195906f) | Namespace default values reject inherited array and object methods |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -123,4 +125,13 @@ revisions and runs the consumer in fresh Node processes:
 node 30-16612-9b03040/verify.mjs
 node 31-16612-9b03040/verify.mjs
 node 32-16612-9b03040/verify.mjs
+```
+
+For #16639, install each case's npm dependencies and download the two CI
+bindings as described in its README, or set `BASE_BINDING` and `PR_BINDING`
+to their absolute paths. Both verifiers rebuild and execute the fixtures:
+
+```sh
+node 35-16639-721350d/verify.mjs
+node 36-16639-721350d/verify.mjs
 ```

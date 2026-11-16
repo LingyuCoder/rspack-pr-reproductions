@@ -1,0 +1,1 @@
+(()=>{var r={346(r,t){t.data="ok"}},t={};(()=>{"use strict";console.log((function o(e){var a=t[e];if(void 0!==a)return a.exports;var s=t[e]={exports:{}};return r[e](s,s.exports,o),s.exports})(346).hasOwnProperty("data"))})()})();

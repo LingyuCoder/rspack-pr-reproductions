@@ -1,0 +1,45 @@
+{
+  "native": {
+    "direct": "AB",
+    "array": "AB",
+    "object": "true"
+  },
+  "base": {
+    "direct": {
+      "errors": [],
+      "warnings": [],
+      "stdout": "AB"
+    },
+    "array": {
+      "errors": [],
+      "warnings": [],
+      "stdout": "AB"
+    },
+    "object": {
+      "errors": [],
+      "warnings": [],
+      "stdout": "true"
+    }
+  },
+  "pr": {
+    "direct": {
+      "errors": [],
+      "warnings": [],
+      "stdout": "AB"
+    },
+    "array": {
+      "errors": [
+        "ESModulesLinkingError: export 'items'.'default'.'map' (imported as 'items') was not found in './namespace.mjs' (possible exports: 0, 1)"
+      ],
+      "warnings": [],
+      "stdout": null
+    },
+    "object": {
+      "errors": [
+        "ESModulesLinkingError: export 'ns'.'default'.'hasOwnProperty' (imported as 'ns') was not found in './namespace.mjs' (possible exports: data)"
+      ],
+      "warnings": [],
+      "stdout": null
+    }
+  }
+}
