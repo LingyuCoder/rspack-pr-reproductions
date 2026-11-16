@@ -1,0 +1,57 @@
+{
+  "engine": "watchpack",
+  "node": "v22.16.0",
+  "platform": "linux",
+  "arch": "x64",
+  "version": "2.6.3",
+  "observations": [
+    {
+      "scenario": "overlap",
+      "directories": [
+        "app",
+        "app/link"
+      ],
+      "contentsViaAlias": "live target edit",
+      "targetEdit": [
+        "app"
+      ],
+      "targetRemovals": [],
+      "ordinaryEdit": [
+        "app"
+      ],
+      "errors": []
+    },
+    {
+      "scenario": "parent-only",
+      "directories": [
+        "app"
+      ],
+      "contentsViaAlias": "live target edit",
+      "targetEdit": [
+        "app"
+      ],
+      "targetRemovals": [],
+      "ordinaryEdit": [
+        "app"
+      ],
+      "errors": []
+    },
+    {
+      "scenario": "no-ignore",
+      "directories": [
+        "app",
+        "app/link"
+      ],
+      "contentsViaAlias": "live target edit",
+      "targetEdit": [
+        "app",
+        "app/link"
+      ],
+      "targetRemovals": [],
+      "ordinaryEdit": [
+        "app"
+      ],
+      "errors": []
+    }
+  ]
+}

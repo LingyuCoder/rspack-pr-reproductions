@@ -1,0 +1,56 @@
+{
+  "engine": "base",
+  "node": "v22.16.0",
+  "platform": "linux",
+  "arch": "x64",
+  "sha256": "65ac94ce071a58245ec036783bbbe6e4d704679c5340867677e17b8d34cfd4e2",
+  "observations": [
+    {
+      "scenario": "overlap",
+      "directories": [
+        "app",
+        "app/link"
+      ],
+      "contentsViaAlias": "live target edit",
+      "targetEdit": [
+        "app",
+        "app/link"
+      ],
+      "targetRemovals": [],
+      "ordinaryEdit": [
+        "app"
+      ],
+      "errors": []
+    },
+    {
+      "scenario": "parent-only",
+      "directories": [
+        "app"
+      ],
+      "contentsViaAlias": "live target edit",
+      "targetEdit": [],
+      "targetRemovals": [],
+      "ordinaryEdit": [
+        "app"
+      ],
+      "errors": []
+    },
+    {
+      "scenario": "no-ignore",
+      "directories": [
+        "app",
+        "app/link"
+      ],
+      "contentsViaAlias": "live target edit",
+      "targetEdit": [
+        "app",
+        "app/link"
+      ],
+      "targetRemovals": [],
+      "ordinaryEdit": [
+        "app"
+      ],
+      "errors": []
+    }
+  ]
+}

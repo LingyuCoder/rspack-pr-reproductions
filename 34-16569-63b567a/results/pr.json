@@ -1,0 +1,55 @@
+{
+  "engine": "pr",
+  "node": "v22.16.0",
+  "platform": "linux",
+  "arch": "x64",
+  "sha256": "9a09840d982cc64e819766b57d0190dfb81e96139e87a8cf411e294f431d76ca",
+  "observations": [
+    {
+      "scenario": "overlap",
+      "directories": [
+        "app",
+        "app/link"
+      ],
+      "contentsViaAlias": "live target edit",
+      "targetEdit": [],
+      "targetRemovals": [],
+      "ordinaryEdit": [
+        "app"
+      ],
+      "errors": []
+    },
+    {
+      "scenario": "parent-only",
+      "directories": [
+        "app"
+      ],
+      "contentsViaAlias": "live target edit",
+      "targetEdit": [
+        "app"
+      ],
+      "targetRemovals": [],
+      "ordinaryEdit": [
+        "app"
+      ],
+      "errors": []
+    },
+    {
+      "scenario": "no-ignore",
+      "directories": [
+        "app",
+        "app/link"
+      ],
+      "contentsViaAlias": "live target edit",
+      "targetEdit": [
+        "app",
+        "app/link"
+      ],
+      "targetRemovals": [],
+      "ordinaryEdit": [
+        "app"
+      ],
+      "errors": []
+    }
+  ]
+}
