@@ -1,0 +1,9 @@
+{
+  "name": "rspack-repro-42-16656-eae5a08",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@rspack/core": "2.3.2",
+    "webpack": "5.112.2"
+  }
+}

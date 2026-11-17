@@ -1,0 +1,56 @@
+{
+  "base": {
+    "pinned": {
+      "value": "v1",
+      "requests": [
+        "/v1.js"
+      ],
+      "errors": []
+    },
+    "latest": {
+      "value": "v2",
+      "requests": [
+        "/latest.js",
+        "/v2.js"
+      ],
+      "errors": []
+    },
+    "locked": "/v2.js",
+    "freshCompilerValue": "v2"
+  },
+  "pr": {
+    "pinned": {
+      "value": "v1",
+      "requests": [
+        "/v1.js"
+      ],
+      "errors": []
+    },
+    "latest": {
+      "value": "v1",
+      "requests": [],
+      "errors": []
+    },
+    "locked": "/v1.js",
+    "freshCompilerValue": "v2"
+  },
+  "webpack": {
+    "pinned": {
+      "value": "v1",
+      "requests": [
+        "/v1.js"
+      ],
+      "errors": []
+    },
+    "latest": {
+      "value": "v2",
+      "requests": [
+        "/latest.js",
+        "/v2.js"
+      ],
+      "errors": []
+    },
+    "locked": "/v2.js",
+    "freshCompilerValue": "v2"
+  }
+}

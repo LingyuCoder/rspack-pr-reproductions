@@ -45,6 +45,8 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [38-16569-9ff89cf](./38-16569-9ff89cf/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`9ff89cf`](https://github.com/web-infra-dev/rspack/commit/9ff89cf5cbdc89d8983439ec814ad0151ea1b33e) | Replacing a watched file symlink while preserving its mtime can leave the build on the old target |
 | [39-16569-9ff89cf](./39-16569-9ff89cf/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`9ff89cf`](https://github.com/web-infra-dev/rspack/commit/9ff89cf5cbdc89d8983439ec814ad0151ea1b33e) | A directory link registered as a file drops live changes for its parent context |
 | [40-16569-9ff89cf](./40-16569-9ff89cf/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`9ff89cf`](https://github.com/web-infra-dev/rspack/commit/9ff89cf5cbdc89d8983439ec814ad0151ea1b33e) | Moving an unregistered ancestor leaves a stale file baseline and hides a replacement with the same mtime |
+| [41-16656-eae5a08](./41-16656-eae5a08/) | [#16656](https://github.com/web-infra-dev/rspack/pull/16656) | [`eae5a08`](https://github.com/web-infra-dev/rspack/commit/eae5a0883638f219c1493631b9108376e2b02b5c) | A fresh HTTP target keeps a redirect alias on its previous version during an upgrade |
+| [42-16656-eae5a08](./42-16656-eae5a08/) | [#16656](https://github.com/web-infra-dev/rspack/pull/16656) | [`eae5a08`](https://github.com/web-infra-dev/rspack/commit/eae5a0883638f219c1493631b9108376e2b02b5c) | Restarting an HTTP upgrade build fails on a 503 despite valid locked content |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -156,4 +158,13 @@ verifiers run the watchers against the filesystem:
 ```sh
 node 39-16569-9ff89cf/verify.mjs
 node 40-16569-9ff89cf/verify.mjs
+```
+
+For #16656, install each case's npm dependencies and download its base and PR
+bindings (or set their paths as described in the case README). Each verifier
+starts a loopback origin and runs both Rspack revisions and webpack:
+
+```sh
+node 41-16656-eae5a08/verify.mjs
+node 42-16656-eae5a08/verify.mjs
 ```

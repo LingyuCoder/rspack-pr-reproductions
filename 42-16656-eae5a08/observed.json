@@ -1,0 +1,44 @@
+{
+  "base": {
+    "cold": {
+      "value": "v1",
+      "requests": [],
+      "errors": []
+    },
+    "noUpgrade": {
+      "value": "v1",
+      "requests": [],
+      "errors": []
+    }
+  },
+  "pr": {
+    "cold": {
+      "value": null,
+      "requests": [
+        "/v1.js"
+      ],
+      "errors": [
+        "× Request failed with status: 503\n  │ origin unavailable"
+      ]
+    },
+    "noUpgrade": {
+      "value": "v1",
+      "requests": [],
+      "errors": []
+    }
+  },
+  "webpack": {
+    "cold": {
+      "value": "v1",
+      "requests": [
+        "/v1.js"
+      ],
+      "errors": []
+    },
+    "noUpgrade": {
+      "value": "v1",
+      "requests": [],
+      "errors": []
+    }
+  }
+}
