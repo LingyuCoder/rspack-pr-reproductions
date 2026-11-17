@@ -1,0 +1,45 @@
+{
+  "node": "v22.16.0",
+  "platform": "linux",
+  "arch": "x64",
+  "rows": [
+    {
+      "engine": "base",
+      "followSymlinks": true,
+      "sameMtime": true,
+      "whileAbsent": "missing",
+      "replacementChanges": [
+        "app/assets/nested/value.js"
+      ],
+      "replacementRemovals": []
+    },
+    {
+      "engine": "pr",
+      "followSymlinks": true,
+      "sameMtime": true,
+      "whileAbsent": "old timestamp",
+      "replacementChanges": [],
+      "replacementRemovals": []
+    },
+    {
+      "engine": "pr",
+      "followSymlinks": false,
+      "sameMtime": true,
+      "whileAbsent": "missing",
+      "replacementChanges": [
+        "app/assets/nested/value.js"
+      ],
+      "replacementRemovals": []
+    },
+    {
+      "engine": "pr",
+      "followSymlinks": true,
+      "sameMtime": false,
+      "whileAbsent": "old timestamp",
+      "replacementChanges": [
+        "app/assets/nested/value.js"
+      ],
+      "replacementRemovals": []
+    }
+  ]
+}

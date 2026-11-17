@@ -43,6 +43,8 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [36-16639-721350d](./36-16639-721350d/) | [#16639](https://github.com/web-infra-dev/rspack/pull/16639) | [`721350d`](https://github.com/web-infra-dev/rspack/commit/721350d84f664a5c57b79799495f101d6195906f) | Namespace default values reject inherited array and object methods |
 | [37-16569-9ff89cf](./37-16569-9ff89cf/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`9ff89cf`](https://github.com/web-infra-dev/rspack/commit/9ff89cf5cbdc89d8983439ec814ad0151ea1b33e) | Creating an ignored empty directory wakes its parent when a missing dependency is registered below it |
 | [38-16569-9ff89cf](./38-16569-9ff89cf/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`9ff89cf`](https://github.com/web-infra-dev/rspack/commit/9ff89cf5cbdc89d8983439ec814ad0151ea1b33e) | Replacing a watched file symlink while preserving its mtime can leave the build on the old target |
+| [39-16569-9ff89cf](./39-16569-9ff89cf/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`9ff89cf`](https://github.com/web-infra-dev/rspack/commit/9ff89cf5cbdc89d8983439ec814ad0151ea1b33e) | A directory link registered as a file drops live changes for its parent context |
+| [40-16569-9ff89cf](./40-16569-9ff89cf/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`9ff89cf`](https://github.com/web-infra-dev/rspack/commit/9ff89cf5cbdc89d8983439ec814ad0151ea1b33e) | Moving an unregistered ancestor leaves a stale file baseline and hides a replacement with the same mtime |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -144,4 +146,14 @@ Watchpack on macOS arm64. Follow the setup in each case README, then run:
 ```sh
 node 37-16569-9ff89cf/verify.mjs
 node 38-16569-9ff89cf/verify.mjs
+```
+
+For the later revision of #16569, download the matching Linux CI bindings
+in each case (or set `BASE_BINDING` and `PR_BINDING`) as described in its
+README. The first case also needs `npm ci` for its Watchpack control. Both
+verifiers run the watchers against the filesystem:
+
+```sh
+node 39-16569-9ff89cf/verify.mjs
+node 40-16569-9ff89cf/verify.mjs
 ```

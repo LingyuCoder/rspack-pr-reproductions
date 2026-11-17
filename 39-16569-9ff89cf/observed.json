@@ -1,0 +1,89 @@
+{
+  "node": "v22.16.0",
+  "platform": "linux",
+  "arch": "x64",
+  "rows": [
+    {
+      "engine": "base",
+      "registerLink": false,
+      "changes": [],
+      "raw": [],
+      "removals": [],
+      "timestampAdvanced": false,
+      "witness": [
+        "app"
+      ]
+    },
+    {
+      "engine": "base",
+      "registerLink": true,
+      "changes": [
+        "app"
+      ],
+      "raw": [
+        "app/link/value.js"
+      ],
+      "removals": [],
+      "timestampAdvanced": true,
+      "witness": [
+        "app"
+      ]
+    },
+    {
+      "engine": "pr",
+      "registerLink": false,
+      "changes": [
+        "app"
+      ],
+      "raw": [
+        "app/link/value.js"
+      ],
+      "removals": [],
+      "timestampAdvanced": true,
+      "witness": [
+        "app"
+      ]
+    },
+    {
+      "engine": "pr",
+      "registerLink": true,
+      "changes": [],
+      "raw": [],
+      "removals": [],
+      "timestampAdvanced": false,
+      "witness": [
+        "app"
+      ]
+    },
+    {
+      "engine": "watchpack",
+      "registerLink": false,
+      "changes": [
+        "app"
+      ],
+      "raw": [
+        "app/link/value.js"
+      ],
+      "removals": [],
+      "timestampAdvanced": true,
+      "witness": [
+        "app"
+      ]
+    },
+    {
+      "engine": "watchpack",
+      "registerLink": true,
+      "changes": [
+        "app"
+      ],
+      "raw": [
+        "app/link/value.js"
+      ],
+      "removals": [],
+      "timestampAdvanced": true,
+      "witness": [
+        "app"
+      ]
+    }
+  ]
+}
