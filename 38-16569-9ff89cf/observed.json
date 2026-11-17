@@ -1,0 +1,49 @@
+{
+  "platform": "darwin",
+  "arch": "arm64",
+  "osRelease": "25.6.0",
+  "node": "v22.16.0",
+  "watchpack": "2.6.3",
+  "bindingSha256": {
+    "base": "b8640cae42806263d50b1a275297f016b8b8304ff603319791cd8e87925dcd19",
+    "pr": "849734cb7bf0e331cf974ababaeb27f2178b286bdd93c4e5c393ecf364c881e2"
+  },
+  "observations": [
+    {
+      "engine": "base",
+      "scenario": "preserved",
+      "sameLinkMtime": true,
+      "targetContent": "B",
+      "changed": [
+        "app/link.js"
+      ],
+      "removed": []
+    },
+    {
+      "engine": "pr",
+      "scenario": "preserved",
+      "sameLinkMtime": true,
+      "targetContent": "B",
+      "changed": [],
+      "removed": []
+    },
+    {
+      "engine": "watchpack",
+      "scenario": "preserved",
+      "sameLinkMtime": true,
+      "targetContent": "B",
+      "changed": [],
+      "removed": []
+    },
+    {
+      "engine": "pr",
+      "scenario": "fresh",
+      "sameLinkMtime": false,
+      "targetContent": "B",
+      "changed": [
+        "app/link.js"
+      ],
+      "removed": []
+    }
+  ]
+}

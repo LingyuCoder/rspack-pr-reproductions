@@ -41,6 +41,8 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [34-16569-63b567a](./34-16569-63b567a/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`63b567a`](https://github.com/web-infra-dev/rspack/commit/63b567a5dbd2e3d78d9a1e3e919537d13e2bb8b9) | An ignored physical file suppresses live edits for an allowed parent context on Linux |
 | [35-16639-721350d](./35-16639-721350d/) | [#16639](https://github.com/web-infra-dev/rspack/pull/16639) | [`721350d`](https://github.com/web-infra-dev/rspack/commit/721350d84f664a5c57b79799495f101d6195906f) | Forwarding a CommonJS namespace hides its default export and can fold a presence check to false |
 | [36-16639-721350d](./36-16639-721350d/) | [#16639](https://github.com/web-infra-dev/rspack/pull/16639) | [`721350d`](https://github.com/web-infra-dev/rspack/commit/721350d84f664a5c57b79799495f101d6195906f) | Namespace default values reject inherited array and object methods |
+| [37-16569-9ff89cf](./37-16569-9ff89cf/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`9ff89cf`](https://github.com/web-infra-dev/rspack/commit/9ff89cf5cbdc89d8983439ec814ad0151ea1b33e) | Creating an ignored empty directory wakes its parent when a missing dependency is registered below it |
+| [38-16569-9ff89cf](./38-16569-9ff89cf/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`9ff89cf`](https://github.com/web-infra-dev/rspack/commit/9ff89cf5cbdc89d8983439ec814ad0151ea1b33e) | Replacing a watched file symlink while preserving its mtime can leave the build on the old target |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -134,4 +136,12 @@ to their absolute paths. Both verifiers rebuild and execute the fixtures:
 ```sh
 node 35-16639-721350d/verify.mjs
 node 36-16639-721350d/verify.mjs
+```
+
+Cases 37 and 38 compare the native watcher on the base and PR CI builds with
+Watchpack on macOS arm64. Follow the setup in each case README, then run:
+
+```sh
+node 37-16569-9ff89cf/verify.mjs
+node 38-16569-9ff89cf/verify.mjs
 ```
