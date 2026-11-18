@@ -47,6 +47,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [40-16569-9ff89cf](./40-16569-9ff89cf/) | [#16569](https://github.com/web-infra-dev/rspack/pull/16569) | [`9ff89cf`](https://github.com/web-infra-dev/rspack/commit/9ff89cf5cbdc89d8983439ec814ad0151ea1b33e) | Moving an unregistered ancestor leaves a stale file baseline and hides a replacement with the same mtime |
 | [41-16656-eae5a08](./41-16656-eae5a08/) | [#16656](https://github.com/web-infra-dev/rspack/pull/16656) | [`eae5a08`](https://github.com/web-infra-dev/rspack/commit/eae5a0883638f219c1493631b9108376e2b02b5c) | A fresh HTTP target keeps a redirect alias on its previous version during an upgrade |
 | [42-16656-eae5a08](./42-16656-eae5a08/) | [#16656](https://github.com/web-infra-dev/rspack/pull/16656) | [`eae5a08`](https://github.com/web-infra-dev/rspack/commit/eae5a0883638f219c1493631b9108376e2b02b5c) | Restarting an HTTP upgrade build fails on a 503 despite valid locked content |
+| [43-16694-2fa4acf](./43-16694-2fa4acf/) | [#16694](https://github.com/web-infra-dev/rspack/pull/16694) | [`2fa4acf`](https://github.com/web-infra-dev/rspack/commit/2fa4acf9415d3ac948c323a6eee9d3a75997282e) | The new warning-filter fixture fails the existing configuration type check |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -167,4 +168,13 @@ starts a loopback origin and runs both Rspack revisions and webpack:
 ```sh
 node 41-16656-eae5a08/verify.mjs
 node 42-16656-eae5a08/verify.mjs
+```
+
+For #16694, compile the exact base and PR configuration fixtures and a typed
+module control using the pinned published Rspack declarations:
+
+```sh
+cd 43-16694-2fa4acf
+npm ci --ignore-scripts --omit=optional
+node verify.mjs
 ```

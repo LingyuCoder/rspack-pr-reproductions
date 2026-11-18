@@ -1,0 +1,24 @@
+{
+  "node": "v22.16.0",
+  "typescript": "6.0.3",
+  "rspackCore": "2.3.2",
+  "baseSha": "90374d632fb7b73c7e3ba01eb96046df054ac0a0",
+  "headSha": "2fa4acf9415d3ac948c323a6eee9d3a75997282e",
+  "fixturePath": "tests/rspack-test/statsOutputCases/ignore-warnings/rspack.config.ts",
+  "fixtureSha256": {
+    "base": "09153ca86ea888165659578cee9fae08015b8dcb3d686c0c8fe5b1f54be4976b",
+    "head": "5e96df5976ed254b2482519fabad22630e02d53b4fc03e0392d360fd68014737"
+  },
+  "base": {
+    "exitCode": 0,
+    "diagnostic": ""
+  },
+  "head": {
+    "exitCode": 2,
+    "diagnostic": "head.config.ts(20,27): error TS2345: Argument of type 'Error & { file: string; module: { readableIdentifier: () => \"warning\"; }; }' is not assignable to parameter of type 'WebpackError'.\n  Types of property 'module' are incompatible.\n    Type '{ readableIdentifier: () => \"warning\"; }' is missing the following properties from type 'Module': type, context, layer, useSourceMap, and 12 more."
+  },
+  "typedModuleControl": {
+    "exitCode": 0,
+    "diagnostic": ""
+  }
+}

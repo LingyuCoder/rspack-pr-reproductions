@@ -1,0 +1,14 @@
+{
+  "name": "ignore-warnings-fixture-typecheck-reproduction",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify": "node verify.mjs"
+  },
+  "devDependencies": {
+    "@rspack/cli": "2.3.2",
+    "@rspack/core": "2.3.2",
+    "@types/node": "20.19.43",
+    "typescript": "6.0.3"
+  }
+}
