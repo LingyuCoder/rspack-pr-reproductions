@@ -1,0 +1,7 @@
+{
+  "name": "shared-fallback-compression-compatibility-reproduction",
+  "private": true,
+  "type": "module",
+  "scripts": { "verify": "node verify.mjs" },
+  "devDependencies": { "compression-webpack-plugin": "12.0.0" }
+}

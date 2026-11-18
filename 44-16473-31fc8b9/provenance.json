@@ -1,0 +1,18 @@
+{
+  "baseSource": "cfa30dbf41e68c5f192901da0cc967de7ee6c850",
+  "reviewedHead": "31fc8b98224fb701924424f53f9ea1af87d44e8e",
+  "nativeSource": "cfa30dbf41e68c5f192901da0cc967de7ee6c850",
+  "nativeRun": 42188308253,
+  "nativeArtifact": 13489181824,
+  "nativeArtifactName": "bindings-aarch64-apple-darwin",
+  "nativeArchiveDigest": "sha256:6136752e8510720ef22b0e4c5c30cb17983d1029f6b053823a22e6d7149ab6dc",
+  "compressionPlugin": "12.0.0",
+  "buildCommand": "npm run build (packages/rspack; rs lib)",
+  "sha256": {
+    "baseWrapper": "7091195854fd7497bc9220ecf5d6c5bb2957055b760a137ae4ef5129817ccf32",
+    "headWrapper": "1b81ce771dbcfae739b6a7989eb87f56c5747b1a9610c4b4a71ac2d4208f3dab",
+    "stage2501Wrapper": "ae10096a2efc0da31442ebb2030b2e92f5af2f5ee0895155e0f50be1ea3bd788",
+    "binding": "104c24394de92d7233869e9989f3fff59f6dfcb33e68895ba8de68018f355a4b"
+  },
+  "nativeSourceDiff": ""
+}

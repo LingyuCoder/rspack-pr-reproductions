@@ -48,6 +48,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [41-16656-eae5a08](./41-16656-eae5a08/) | [#16656](https://github.com/web-infra-dev/rspack/pull/16656) | [`eae5a08`](https://github.com/web-infra-dev/rspack/commit/eae5a0883638f219c1493631b9108376e2b02b5c) | A fresh HTTP target keeps a redirect alias on its previous version during an upgrade |
 | [42-16656-eae5a08](./42-16656-eae5a08/) | [#16656](https://github.com/web-infra-dev/rspack/pull/16656) | [`eae5a08`](https://github.com/web-infra-dev/rspack/commit/eae5a0883638f219c1493631b9108376e2b02b5c) | Restarting an HTTP upgrade build fails on a 503 despite valid locked content |
 | [43-16694-2fa4acf](./43-16694-2fa4acf/) | [#16694](https://github.com/web-infra-dev/rspack/pull/16694) | [`2fa4acf`](https://github.com/web-infra-dev/rspack/commit/2fa4acf9415d3ac948c323a6eee9d3a75997282e) | The new warning-filter fixture fails the existing configuration type check |
+| [44-16473-31fc8b9](./44-16473-31fc8b9/) | [#16473](https://github.com/web-infra-dev/rspack/pull/16473) | [`31fc8b9`](https://github.com/web-infra-dev/rspack/commit/31fc8b98224fb701924424f53f9ea1af87d44e8e) | Shared fallback compilation fails when compression deletes original JavaScript assets |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -177,4 +178,12 @@ module control using the pinned published Rspack declarations:
 cd 43-16694-2fa4acf
 npm ci --ignore-scripts --omit=optional
 node verify.mjs
+```
+
+For #16473, build the exact base and head JavaScript wrappers and download the
+matching base CI binding, then install case 44's pinned compression plugin as
+documented in its README. The native sources are unchanged by the PR:
+
+```sh
+node 44-16473-31fc8b9/verify.mjs
 ```

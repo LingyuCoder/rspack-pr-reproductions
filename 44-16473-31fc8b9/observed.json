@@ -1,0 +1,78 @@
+{
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "captures": [
+    {
+      "label": "base-delete-originals",
+      "deleteOriginalAssets": true,
+      "success": true,
+      "error": null,
+      "statsErrors": [],
+      "callbackAssets": {
+        "compat-shared": [
+          [
+            "independent-packages/compat_shared/1.0.0/share-entry.js",
+            "1.0.0",
+            "compression_compat_f_compat_shared_100"
+          ]
+        ]
+      },
+      "fallbackFiles": [
+        "share-entry.js.gz"
+      ],
+      "gzipContainsSharedValue": true
+    },
+    {
+      "label": "head-delete-originals",
+      "deleteOriginalAssets": true,
+      "success": false,
+      "error": "Error:   × Error:   × caused by plugins in Compilation.hooks.processAssets\n  │   ╰─▶   × Error: no files found for shared compat-shared chunk\n  │         │     at assert (file://<HEAD_CORE>/index.js:14510:27)\n  │         │     at Object.fn (file://<HEAD_CORE>/index.js:14560:17)\n  │         │     at next (file://<HEAD_CORE>/index.js:743:25)\n  │         │     at promise.then.index (file://<HEAD_CORE>/index.js:733:68)\n  │         │     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n  │         │\n  │ \n  │ \n  │ \n",
+      "statsErrors": [],
+      "callbackAssets": null,
+      "fallbackFiles": [],
+      "gzipContainsSharedValue": false
+    },
+    {
+      "label": "head-keep-originals",
+      "deleteOriginalAssets": false,
+      "success": true,
+      "error": null,
+      "statsErrors": [],
+      "callbackAssets": {
+        "compat-shared": [
+          [
+            "independent-packages/compat_shared/1.0.0/share-entry.js",
+            "1.0.0",
+            "compression_compat_f_compat_shared_100"
+          ]
+        ]
+      },
+      "fallbackFiles": [
+        "share-entry.js",
+        "share-entry.js.gz"
+      ],
+      "gzipContainsSharedValue": true
+    },
+    {
+      "label": "head-stage-2501-control",
+      "deleteOriginalAssets": true,
+      "success": true,
+      "error": null,
+      "statsErrors": [],
+      "callbackAssets": {
+        "compat-shared": [
+          [
+            "independent-packages/compat_shared/1.0.0/share-entry.js",
+            "1.0.0",
+            "compression_compat_f_compat_shared_100"
+          ]
+        ]
+      },
+      "fallbackFiles": [
+        "share-entry.js.gz"
+      ],
+      "gzipContainsSharedValue": true
+    }
+  ]
+}
