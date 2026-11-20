@@ -1,0 +1,25 @@
+{
+  "reviewedHead": "345e82f85244ce7d430bf9b11e4b30cc01a883ac",
+  "mergeBase": "6abd4c4e2c57afd007bf979f35afa44a5e8ed464",
+  "base": {
+    "compiledSource": "109b40d7126e38b0bdfe709d116da869cf557e09",
+    "runId": 44509385975,
+    "artifactId": 14521256986,
+    "artifactName": "bindings-aarch64-apple-darwin",
+    "bindingSha256": "7508c1f495fd8fe06ade71ab273290c70776a65e79b35b49bb9469f4de196f52"
+  },
+  "pr": {
+    "compiledSource": "76a4ebc137e2e2d2d6f8befed5cf8bd317b71353",
+    "parents": ["109b40d7126e38b0bdfe709d116da869cf557e09", "345e82f85244ce7d430bf9b11e4b30cc01a883ac"],
+    "runId": 44510670307,
+    "artifactId": 14522222649,
+    "artifactName": "bindings-aarch64-apple-darwin",
+    "bindingSha256": "3c4bb5a6d09f54ce1ab918e9ad0e6afe5601b9912786fab475143fc3baaae783"
+  },
+  "wrapper": {
+    "package": "@rspack-canary/core@2.3.4-canary-ce45cb54-20261119172153",
+    "source": "ce45cb54e5494c474e34547db06af70664b52081",
+    "distIndexSha256": "e873be7dd3a4c5d04c61bf7f3897c05570be7e8fb5a8d3bd27121a103de8bd50",
+    "compatibility": "packages/rspack and crates/node_binding are identical between wrapper source ce45cb54 and base 109b40d; the PR changes only Rust and tests."
+  }
+}

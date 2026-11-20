@@ -1,0 +1,9 @@
+{
+  "name": "static-request-descendant-order-reproduction",
+  "private": true,
+  "type": "module",
+  "scripts": { "verify": "node verify.mjs" },
+  "dependencies": {
+    "@rspack/core": "npm:@rspack-canary/core@2.3.4-canary-ce45cb54-20261119172153"
+  }
+}

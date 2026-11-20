@@ -1,0 +1,161 @@
+{
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "native": {
+    "order": [
+      "setup",
+      "consumer",
+      "local"
+    ],
+    "ready": true
+  },
+  "base": [
+    {
+      "name": "webpack-plain",
+      "files": [
+        "index.mjs"
+      ],
+      "imports": [
+        "setup",
+        "consumer"
+      ],
+      "status": 0,
+      "result": {
+        "order": [
+          "setup",
+          "consumer",
+          "local"
+        ],
+        "ready": true
+      }
+    },
+    {
+      "name": "webpack-min",
+      "files": [
+        "index.mjs"
+      ],
+      "imports": [
+        "setup",
+        "consumer"
+      ],
+      "status": 0,
+      "result": {
+        "order": [
+          "setup",
+          "consumer",
+          "local"
+        ],
+        "ready": true
+      }
+    },
+    {
+      "name": "rspack-plain",
+      "files": [
+        "index.mjs"
+      ],
+      "imports": [
+        "setup",
+        "consumer"
+      ],
+      "status": 0,
+      "result": {
+        "order": [
+          "setup",
+          "consumer",
+          "local"
+        ],
+        "ready": true
+      }
+    },
+    {
+      "name": "rspack-min",
+      "files": [
+        "index.mjs"
+      ],
+      "imports": [
+        "setup",
+        "consumer"
+      ],
+      "status": 0,
+      "result": {
+        "order": [
+          "setup",
+          "consumer",
+          "local"
+        ],
+        "ready": true
+      }
+    }
+  ],
+  "pr": [
+    {
+      "name": "webpack-plain",
+      "files": [
+        "index.mjs"
+      ],
+      "imports": [
+        "consumer",
+        "setup"
+      ],
+      "status": 1,
+      "result": {
+        "order": [
+          "consumer"
+        ],
+        "error": "consumer ran before setup"
+      }
+    },
+    {
+      "name": "webpack-min",
+      "files": [
+        "index.mjs"
+      ],
+      "imports": [
+        "consumer",
+        "setup"
+      ],
+      "status": 1,
+      "result": {
+        "order": [
+          "consumer"
+        ],
+        "error": "consumer ran before setup"
+      }
+    },
+    {
+      "name": "rspack-plain",
+      "files": [
+        "index.mjs"
+      ],
+      "imports": [
+        "consumer",
+        "setup"
+      ],
+      "status": 1,
+      "result": {
+        "order": [
+          "consumer"
+        ],
+        "error": "consumer ran before setup"
+      }
+    },
+    {
+      "name": "rspack-min",
+      "files": [
+        "index.mjs"
+      ],
+      "imports": [
+        "consumer",
+        "setup"
+      ],
+      "status": 1,
+      "result": {
+        "order": [
+          "consumer"
+        ],
+        "error": "consumer ran before setup"
+      }
+    }
+  ]
+}

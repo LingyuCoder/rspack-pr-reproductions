@@ -1,0 +1,1 @@
+import"./consumer.mjs";import"./setup.mjs";(globalThis.order??=[]).push("local");let o=!0;export{o as ready};

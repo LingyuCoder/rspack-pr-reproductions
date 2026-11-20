@@ -50,6 +50,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [43-16694-2fa4acf](./43-16694-2fa4acf/) | [#16694](https://github.com/web-infra-dev/rspack/pull/16694) | [`2fa4acf`](https://github.com/web-infra-dev/rspack/commit/2fa4acf9415d3ac948c323a6eee9d3a75997282e) | The new warning-filter fixture fails the existing configuration type check |
 | [44-16473-31fc8b9](./44-16473-31fc8b9/) | [#16473](https://github.com/web-infra-dev/rspack/pull/16473) | [`31fc8b9`](https://github.com/web-infra-dev/rspack/commit/31fc8b98224fb701924424f53f9ea1af87d44e8e) | Shared fallback compilation fails when compression deletes original JavaScript assets |
 | [45-16473-934a07b](./45-16473-934a07b/) | [#16473](https://github.com/web-infra-dev/rspack/pull/16473) | [`934a07b`](https://github.com/web-infra-dev/rspack/commit/934a07b0b2ec49bec78ce459a9ae88d215efdc0d) | Replacing a shared fallback asset before stage 2501 makes a working build fail |
+| [46-16651-345e82f](./46-16651-345e82f/) | [#16651](https://github.com/web-infra-dev/rspack/pull/16651) | [`345e82f`](https://github.com/web-infra-dev/rspack/commit/345e82f85244ce7d430bf9b11e4b30cc01a883ac) | A bundled descendant's external runs before an earlier external initializer |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -194,4 +195,12 @@ the wrapper and binding paths in the case README and run:
 
 ```sh
 node 45-16473-934a07b/verify.mjs
+```
+
+For #16651, install case 46's pinned wrapper and download the base and PR CI
+bindings (or set `BASE_BINDING` and `PR_BINDING`) as described in its README.
+The verifier performs a native ESM control and eight live builds/executions:
+
+```sh
+node 46-16651-345e82f/verify.mjs
 ```
