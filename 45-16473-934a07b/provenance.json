@@ -1,0 +1,20 @@
+{
+  "base": "9b175f33eb5bde07bb7620c3a0fac0d4e1f8aaaf",
+  "head": "934a07b0b2ec49bec78ce459a9ae88d215efdc0d",
+  "bindingBuild": {
+    "run": 44303951423,
+    "artifactId": 14495167157,
+    "artifactName": "bindings-aarch64-apple-darwin",
+    "archiveDigest": "sha256:06503c5f30ff758cb57b78fda1db6622cd1502205a5e64c2bd32b566e2e99bf4",
+    "commit": "ffbef8ff1e6c8e11c2a19e75ee064fa05f5b1e6a",
+    "parents": [
+      "9b175f33eb5bde07bb7620c3a0fac0d4e1f8aaaf",
+      "1c7b3dfa41cd6ae7a5318e4c55d9e6891cf88043"
+    ]
+  },
+  "sha256": {
+    "baseCore": "ad2b123568ac37e1128677802ee1942d2a51efb5eb4f1e01109a8ab59607fcf5",
+    "headCore": "a94d280d3b6428b28584125bf87224df8bca846b56c3357fd6532deb3c0f29cc",
+    "nativeBinding": "3863d441d45ebe473c8a0c7f5e3b3cd3b43b4be227837ed7a92571c7cde2e490"
+  }
+}

@@ -49,6 +49,7 @@ pull requests. Case directories use `NN-PR_ID-SHORT_COMMIT_ID`.
 | [42-16656-eae5a08](./42-16656-eae5a08/) | [#16656](https://github.com/web-infra-dev/rspack/pull/16656) | [`eae5a08`](https://github.com/web-infra-dev/rspack/commit/eae5a0883638f219c1493631b9108376e2b02b5c) | Restarting an HTTP upgrade build fails on a 503 despite valid locked content |
 | [43-16694-2fa4acf](./43-16694-2fa4acf/) | [#16694](https://github.com/web-infra-dev/rspack/pull/16694) | [`2fa4acf`](https://github.com/web-infra-dev/rspack/commit/2fa4acf9415d3ac948c323a6eee9d3a75997282e) | The new warning-filter fixture fails the existing configuration type check |
 | [44-16473-31fc8b9](./44-16473-31fc8b9/) | [#16473](https://github.com/web-infra-dev/rspack/pull/16473) | [`31fc8b9`](https://github.com/web-infra-dev/rspack/commit/31fc8b98224fb701924424f53f9ea1af87d44e8e) | Shared fallback compilation fails when compression deletes original JavaScript assets |
+| [45-16473-934a07b](./45-16473-934a07b/) | [#16473](https://github.com/web-infra-dev/rspack/pull/16473) | [`934a07b`](https://github.com/web-infra-dev/rspack/commit/934a07b0b2ec49bec78ce459a9ae88d215efdc0d) | Replacing a shared fallback asset before stage 2501 makes a working build fail |
 
 Check each case's saved evidence with Node.js 22 or newer, without installing dependencies:
 
@@ -186,4 +187,11 @@ documented in its README. The native sources are unchanged by the PR:
 
 ```sh
 node 44-16473-31fc8b9/verify.mjs
+```
+
+Case 45 covers an earlier asset replacement on the later #16473 head. Set
+the wrapper and binding paths in the case README and run:
+
+```sh
+node 45-16473-934a07b/verify.mjs
 ```

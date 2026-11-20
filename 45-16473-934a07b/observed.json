@@ -1,0 +1,55 @@
+{
+  "node": "v22.16.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "captures": [
+    {
+      "revision": "BASE",
+      "variant": "replace-early",
+      "processing": {
+        "stage": 401,
+        "assetExists": true,
+        "listedInChunk": false
+      },
+      "fallback": "independent-packages/mf_4059eaba3c6de892/1.0.0/share-entry.js",
+      "value": "fallback-runtime-ok",
+      "error": null
+    },
+    {
+      "revision": "HEAD",
+      "variant": "replace-early",
+      "processing": {
+        "stage": 401,
+        "assetExists": true,
+        "listedInChunk": false
+      },
+      "fallback": null,
+      "value": null,
+      "error": "no files found for shared compat-shared chunk"
+    },
+    {
+      "revision": "HEAD",
+      "variant": "replace-late",
+      "processing": {
+        "stage": 3000,
+        "assetExists": true,
+        "listedInChunk": false
+      },
+      "fallback": "independent-packages/mf_4059eaba3c6de892/1.0.0/share-entry.js",
+      "value": "fallback-runtime-ok",
+      "error": null
+    },
+    {
+      "revision": "HEAD",
+      "variant": "update-early",
+      "processing": {
+        "stage": 401,
+        "assetExists": true,
+        "listedInChunk": true
+      },
+      "fallback": "independent-packages/mf_4059eaba3c6de892/1.0.0/share-entry.js",
+      "value": "fallback-runtime-ok",
+      "error": null
+    }
+  ]
+}
